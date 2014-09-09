@@ -4,27 +4,6 @@
     xmlns:controls="clr-namespace:AppStudio.Controls;assembly=AppStudio"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone">
 
-    <DataTemplate x:Name="Trailers1DetailHeader">
-        <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-            <TextBlock Text="Detail" FontSize="56" Foreground="{StaticResource AppForegroundColor}" Width="440" />
-        </StackPanel>
-    </DataTemplate>
-
-    <!-- InstancePhoto -->
-    <DataTemplate x:Name="Trailers1DetailLayout">
-        <Grid Margin="10,5,5,5">
-            <ScrollViewer>
-                <StackPanel>
-                    <Grid Margin="0,10" MaxHeight="250" VerticalAlignment="Top" Background="Transparent">
-                        <Button Style="{StaticResource ImageButtonStyle}" Command="{Binding DataContext.ImageSelectedCommand, ElementName=LayoutRoot}" CommandParameter="">
-                            <Image Margin="0,10" Source="" MaxHeight="250" VerticalAlignment="Top"></Image>
-                        </Button>
-                    </Grid>
-                </StackPanel>
-            </ScrollViewer>
-        </Grid>
-    </DataTemplate>
-
     <DataTemplate x:Name="Search1DetailHeader">
         <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
             <TextBlock Text="Detail" FontSize="56" Foreground="{StaticResource AppForegroundColor}" Width="440" />

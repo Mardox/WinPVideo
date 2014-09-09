@@ -10,16 +10,18 @@
   <!--Application Resources-->
   <Application.Resources>
     <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Styles/AppStyles.xaml"/>
-        <ResourceDictionary Source="Styles/ButtonStyles.xaml"/>
-        <ResourceDictionary Source="Views/DataTemplates/Trailers.xaml"/>
-        <ResourceDictionary Source="Views/DataTemplates/Trailers1Detail.xaml"/>
-        <ResourceDictionary Source="Views/DataTemplates/Music.xaml"/>
-        <ResourceDictionary Source="Views/DataTemplates/Music1Detail.xaml"/>
-      </ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/AppStyles.xaml"/>
+                <ResourceDictionary Source="Styles/ButtonStyles.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Trailers.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Trailers1Detail.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Music.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Music1Detail.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Search.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/Search1Detail.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
 
-      <sys:String x:Key="AppName">Test App</sys:String>
+            <sys:String x:Key="AppName">Test App</sys:String>
       <sys:String x:Key="AppTitle">Test App</sys:String>
 
       <commands:ActionCommands xmlns:commands="clr-namespace:AppStudio" x:Key="ActionCommands"/>

@@ -188,7 +188,7 @@
   <data name="SpeakText" xml:space="preserve">
     <value>read</value>
   </data>
- <data name="Privacy" xml:space="preserve">
+  <data name="Privacy" xml:space="preserve">
     <value>privacy</value>
   </data>
   <data name="AppVersion" xml:space="preserve">
@@ -202,5 +202,8 @@
   </data>
   <data name="NoConnectionMessage" xml:space="preserve">
     <value>The video cannot be shown because there is no connection available.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>search</value>
   </data>
 </root>

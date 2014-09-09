@@ -10,6 +10,7 @@ namespace AppStudio
     {
        private TrailersViewModel _trailersModel;
        private MusicViewModel _musicModel;
+       private SearchViewModel _searchModel;
 
         private ViewModelBase _selectedItem = null;
         private PrivacyViewModel _privacyModel;
@@ -30,10 +31,16 @@ namespace AppStudio
             get { return _musicModel ?? (_musicModel = new MusicViewModel()); }
         }
 
+        public SearchViewModel SearchModel
+        {
+            get { return _searchModel ?? (_searchModel = new SearchViewModel()); }
+        }
+
         public void SetViewType(ViewTypes viewType)
         {
             TrailersModel.ViewType = viewType;
             MusicModel.ViewType = viewType;
+            SearchModel.ViewType = viewType;
         }
 
         public ViewModelBase SelectedItem
@@ -94,6 +101,15 @@ namespace AppStudio
             await Task.WhenAll(loadTasks);
         }
 
+        public async Task LoadSearchData(bool isNetworkAvailable)
+        {
+            var loadTasks = new Task[]
+            { 
+                SearchModel.LoadItems(isNetworkAvailable),
+            };
+            await Task.WhenAll(loadTasks);
+        }
+
         //
         //  ViewModel command implementation
         //
@@ -126,6 +142,17 @@ namespace AppStudio
                 return new DelegateCommand(() =>
                 {
                     LockScreenServices.SetLockScreen("/Assets/LockScreenImage.png");
+                });
+            }
+        }
+
+        public ICommand SearchCommand
+        {
+            get
+            {
+                return new DelegateCommand(() =>
+                {
+                    NavigationServices.NavigateToPage("SearchPage");
                 });
             }
         }

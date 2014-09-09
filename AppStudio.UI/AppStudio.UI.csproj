@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{69e2897c-2863-4b8b-ad97-e888a0aac236}</ProjectGuid>
+    <ProjectGuid>{69E2897C-2863-4B8B-AD97-E888A0AAC236}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -101,38 +101,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-  <Content Include="Assets\Icons\Dark\GoToSource.png" />
-  <Content Include="Assets\Icons\Dark\LockScreen.png" />
-  <Content Include="Assets\Icons\Dark\PinToStart.png" />
-  <Content Include="Assets\Icons\Dark\Refresh.png" />
-  <Content Include="Assets\Icons\Dark\Share.png" />
-  <Content Include="Assets\Icons\Dark\TextToSpeech.png" />
-  <Content Include="Assets\Icons\Light\GoToSource.png" />
-  <Content Include="Assets\Icons\Light\LockScreen.png" />
-  <Content Include="Assets\Icons\Light\PinToStart.png" />
-  <Content Include="Assets\Icons\Light\Refresh.png" />
-  <Content Include="Assets\Icons\Light\Share.png" />
-  <Content Include="Assets\Icons\Light\TextToSpeech.png" />
-  <Content Include="Assets\AlignmentGrid.png" />
-  <Content Include="Assets\NoImage.png" />
-  <Content Include="Views\DataTemplates\Trailers.xaml" />
-  <Content Include="Views\DataTemplates\Trailers1Detail.xaml" />
-  <Content Include="Views\DataTemplates\Music.xaml" />
-  <Content Include="Views\DataTemplates\Music1Detail.xaml" />
-</ItemGroup>
-
+    <Content Include="Assets\Icons\Dark\feature.search.png" />
+    <Content Include="Assets\Icons\Dark\GoToSource.png" />
+    <Content Include="Assets\Icons\Dark\LockScreen.png" />
+    <Content Include="Assets\Icons\Dark\PinToStart.png" />
+    <Content Include="Assets\Icons\Dark\Refresh.png" />
+    <Content Include="Assets\Icons\Dark\Share.png" />
+    <Content Include="Assets\Icons\Dark\TextToSpeech.png" />
+    <Content Include="Assets\Icons\Light\feature.search.png" />
+    <Content Include="Assets\Icons\Light\GoToSource.png" />
+    <Content Include="Assets\Icons\Light\LockScreen.png" />
+    <Content Include="Assets\Icons\Light\PinToStart.png" />
+    <Content Include="Assets\Icons\Light\Refresh.png" />
+    <Content Include="Assets\Icons\Light\Share.png" />
+    <Content Include="Assets\Icons\Light\TextToSpeech.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\NoImage.png" />
+    <Content Include="Views\DataTemplates\Trailers.xaml" />
+    <Content Include="Views\DataTemplates\Trailers1Detail.xaml" />
+    <Content Include="Views\DataTemplates\Music.xaml" />
+    <Content Include="Views\DataTemplates\Music1Detail.xaml" />
+  </ItemGroup>
   <ItemGroup>
-  <Content Include="Assets\LockScreenImage.png" />
-  <Content Include="Assets\ApplicationIcon.png" />
-  <Content Include="Assets\Tiles\SmallIcon.png" />
-  <Content Include="Assets\Tiles\BackgroundImage.png" />
-  <Content Include="Assets\Tiles\BackBackgroundImage.png" />
-  <Content Include="Assets\Tiles\LargeBackgroundImage.png" />
-  <Content Include="Assets\Tiles\LargeBackBackgroundImage.png" />
-  <Content Include="Assets\ApplicationLogo.png" />
-  <Content Include="SplashScreenImage.png" />
-</ItemGroup>
-
+    <Content Include="Assets\LockScreenImage.png" />
+    <Content Include="Assets\ApplicationIcon.png" />
+    <Content Include="Assets\Tiles\SmallIcon.png" />
+    <Content Include="Assets\Tiles\BackgroundImage.png" />
+    <Content Include="Assets\Tiles\BackBackgroundImage.png" />
+    <Content Include="Assets\Tiles\LargeBackgroundImage.png" />
+    <Content Include="Assets\Tiles\LargeBackBackgroundImage.png" />
+    <Content Include="Assets\ApplicationLogo.png" />
+    <Content Include="SplashScreenImage.png" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ActionCommands.cs" />
@@ -157,6 +157,7 @@
     <Compile Include="Services\SpeechServices.cs" />
     <Compile Include="Services\TileServices.cs" />
     <Compile Include="ViewModels\PrivacyViewModel.cs" />
+    <Compile Include="ViewModels\SearchViewModel.cs" />
     <Compile Include="ViewModels\YouTube\YTHelper.cs" />
     <Compile Include="ViewModels\YouTube\YTViewerViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -166,6 +167,9 @@
   <ItemGroup>
     <Compile Include="Views\ImageViewer.xaml.cs">
       <DependentUpon>ImageViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\YouTubeViewer.xaml.cs">
       <DependentUpon>YouTubeViewer.xaml</DependentUpon>
@@ -179,7 +183,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Content Include="Views\DataTemplates\Search.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\DataTemplates\Search1Detail.xaml">
+      <SubType>Designer</SubType>
+    </Content>
     <Page Include="Views\ImageViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SearchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -191,7 +205,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-        <Page Include="Styles\ButtonStyles.xaml">
+    <Page Include="Styles\ButtonStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
