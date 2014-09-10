@@ -9,12 +9,14 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.IO.IsolatedStorage;
 using Microsoft.Phone.Net.NetworkInformation;
+using System.Diagnostics;
 
 namespace AppStudio.Views
 {
     public partial class SearchPage : PhoneApplicationPage
     {
         public MainViewModels MainViewModels { get; private set; }
+        private string fromToast;
         public SearchPage()
         {
             InitializeComponent();

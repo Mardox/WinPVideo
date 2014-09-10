@@ -137,12 +137,15 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\MyToolk
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\MyToolkit.Extended.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Newtonsoft.Json.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Nokia.Music.Wp8.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\ScheduledTaskAgent1.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\SharpGIS.GZipWebClient.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\System.Windows.Interactivity.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\WPAppStudio.Shared2.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\HtmlAgilityPack-PCL.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\System.ServiceModel.Syndication.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio.Data.pdb
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\ScheduledTaskAgent1.pdb
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Microsoft.Advertising.Mobile.xml
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Microsoft.Advertising.Mobile.UI.xml
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Newtonsoft.Json.xml
@@ -237,7 +240,9 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\zh-Hans
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.UI.csprojResolveAssemblyReference.cache
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\App.g.cs
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\DetailsPage.g.cs
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\ImageViewer.g.cs
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\SearchPage.g.cs
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\YouTubeViewer.g.cs
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\MainPage.g.cs
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.g.resources
@@ -246,4 +251,3 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStud
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.pdb
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\XapCacheFile.xml
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\SearchPage.g.cs

@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D7783267-F0F5-41C6-8922-23DED50069EC}</ProjectGuid>
+    <ProjectGuid>{7C21E3F6-C2FF-4147-845A-37818D575C2E}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppStudio.Data</RootNamespace>
-    <AssemblyName>AppStudio.Data</AssemblyName>
+    <RootNamespace>ScheduledTaskAgent1</RootNamespace>
+    <AssemblyName>ScheduledTaskAgent1</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>false</SilverlightApplication>
     <ValidateXaml>true</ValidateXaml>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
-    <RestorePackages>true</RestorePackages>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <BackgroundAgentType>AgentLibrary</BackgroundAgentType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,54 +84,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="DataSources\SearchDataSource.cs" />
+    <Compile Include="ScheduledAgent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AppStorage\AppCache.cs" />
-    <Compile Include="AppStorage\AppLogs.cs" />
-    <Compile Include="AppStorage\UserSettings.cs" />
-    <Compile Include="AppStorage\UserStorage.cs" />
-    <Compile Include="Common\HtmlUtil.cs" />
-    <Compile Include="Common\InternetConnection.cs" />
-    <Compile Include="Common\RssHelper.cs" />
-    <Compile Include="Common\Utility.cs" />
-    <Compile Include="DataProviders\RssReaders\AtomReader.cs" />
-    <Compile Include="DataProviders\RssReaders\BaseRssReader.cs" />
-    <Compile Include="DataProviders\RssReaders\RssReader.cs" />
-    <Compile Include="DataProviders\RssDataProvider.cs" />
-    <Compile Include="DataProviders\YouTubeDataProvider.cs" />
-    <Compile Include="DataSchemas\RssSchema.cs" />
-    <Compile Include="DataSchemas\YouTubeSchema.cs" />
-    <Compile Include="DataSources\TrailersDataSource.cs" />
-    <Compile Include="DataSources\MusicDataSource.cs" />
+    <Compile Include="YoutubeVideo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="WPAppStudio.Shared2.dll">
-      <HintPath>..\Lib\WPAppStudio.Shared2.dll</HintPath>
+    <Reference Include="MyToolkit">
+      <HintPath>..\packages\MyToolkit.2.0.14.0\lib\portable-win+net40+sl40+wp71\MyToolkit.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack-PCL">
-      <HintPath>..\packages\HtmlAgilityPack-PCL.1.4.6\lib\HtmlAgilityPack-PCL.dll</HintPath>
+    <Reference Include="MyToolkit.Extended">
+      <HintPath>..\packages\MyToolkit.Extended.2.0.14.0\lib\wp80\MyToolkit.Extended.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpGIS.GZipWebClient">
-      <HintPath>..\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll</HintPath>
+    <Reference Include="System.ServiceModel.Syndication">
+      <HintPath>..\..\..\..\Desktop\System.ServiceModel.Syndication.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ProjectExtensions />
 </Project>
