@@ -166,9 +166,6 @@
     <Compile Include="ViewModels\MusicViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\DetailsPage.xaml.cs">
-      <DependentUpon>DetailsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\ImageViewer.xaml.cs">
       <DependentUpon>ImageViewer.xaml</DependentUpon>
     </Compile>
@@ -193,10 +190,6 @@
     <Content Include="Views\DataTemplates\Search1Detail.xaml">
       <SubType>Designer</SubType>
     </Content>
-    <Page Include="Views\DetailsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\ImageViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

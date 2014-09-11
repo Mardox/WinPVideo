@@ -89,15 +89,18 @@
     <Compile Include="YoutubeVideo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MyToolkit">
-      <HintPath>..\packages\MyToolkit.2.0.14.0\lib\portable-win+net40+sl40+wp71\MyToolkit.dll</HintPath>
+    <Reference Include="SharpGIS.GZipWebClient">
+      <HintPath>..\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll</HintPath>
     </Reference>
-    <Reference Include="MyToolkit.Extended">
-      <HintPath>..\packages\MyToolkit.Extended.2.0.14.0\lib\wp80\MyToolkit.Extended.dll</HintPath>
+    <Reference Include="WPAppStudio.Shared2">
+      <HintPath>..\Lib\WPAppStudio.Shared2.dll</HintPath>
     </Reference>
-    <Reference Include="System.ServiceModel.Syndication">
-      <HintPath>..\..\..\..\Desktop\System.ServiceModel.Syndication.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppStudio.Data\AppStudio.Data.csproj">
+      <Project>{d7783267-f0f5-41c6-8922-23ded50069ec}</Project>
+      <Name>AppStudio.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

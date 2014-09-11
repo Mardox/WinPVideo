@@ -4,12 +4,15 @@ using System.Windows;
 using Microsoft.Phone.Scheduler;
 using Microsoft.Phone.Shell;
 using System;
-using MyToolkit.Multimedia;
 using System.Net;
 using System.IO;
 using System.Xml;
-using System.ServiceModel.Syndication;
 using System.Collections.Generic;
+using AppStudio.Data;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using AppStudio;
+using System.IO.IsolatedStorage;
 
 
 namespace ScheduledTaskAgent1
@@ -47,20 +50,23 @@ namespace ScheduledTaskAgent1
         /// <remarks>
         /// This method is called when a periodic or resource intensive task is invoked
         /// </remarks>
-        private bool ranOnce = false;
-        private YoutubeVideo video;
-        private List<YoutubeVideo> videosList = new List<YoutubeVideo>();
-        YoutubeVideo finalVideo;
+        private YouTubeSchema video;
+        private List<YouTubeSchema> videosList = new List<YouTubeSchema>();
+        YTHelper videoItem;
+        string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
+        string baseEndUrl = "&orderby=published&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
+        string _queryString = null;
+        string _url = "";
+        private ObservableCollection<YouTubeSchema> resultItems;
+        private IEnumerable<YouTubeSchema> _data = null;
+
         protected override void OnInvoke(ScheduledTask task)
         {
             //TODO: Add code to perform your task in background
             DateTime dt = DateTime.Now;
             int hours = dt.Hour;
             int minute = dt.Minute;
-            string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
-            string baseEndUrl = "&orderby=published&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
-            string _queryString = null;
-            string _url = "";
+            
 
             string[] topics = { "Apple",
                                 "Microsoft",
@@ -72,21 +78,16 @@ namespace ScheduledTaskAgent1
                               "Sony",
                               "iOS",
                               "Windows"};
-            
-            if (hours <= 20 && hours >= 15)
-            {
-               
-                    Random r = new Random();
-                    int randomTopic = r.Next(0, 10);
-                    _queryString = topics[3];
-                    _url = baseUrl + _queryString + baseEndUrl;
 
-
-
-                    GetData(_url);
-                    //int randomVideo = r.Next(1, 19); 
-                
-            }
+            //if (hours <= 23 && hours >= 14)
+            //{
+                Random r = new Random();
+                int randomTopic = r.Next(0, 10);
+                _queryString = topics[randomTopic];
+                _url = baseUrl + _queryString + baseEndUrl;
+                //GetData(_url);      
+                fetchData();
+            //}
             // If debugging is enabled, launch the agent again in one minute.
 #if DEBUG_AGENT
   ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
@@ -94,68 +95,72 @@ namespace ScheduledTaskAgent1
             
         }
 
-        //RSS 
-        private void GetData(string url)
-        {
-            WebClient webClient = new WebClient();
-            webClient.DownloadStringAsync(new System.Uri(url));
-            webClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webClient_DownloadStringCompleted);
-        }
-
-
-        private void webClient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-        {
-            if (e.Error != null)
-            {
-                MessageBox.Show(e.Error.Message);
-            }
-            else
-            {
-                GetYoutubeVideos(e.Result);
-            }
-        }
-
-
-        //Get Youtube Channel 
-        private void GetYoutubeVideos(string feedXML)
+        private async void fetchData()
         {
             try
             {
-                StringReader stringReader = new StringReader(feedXML);
-                XmlReader xmlReader = XmlReader.Create(stringReader);
-                SyndicationFeed feed = SyndicationFeed.Load(xmlReader);
+                var resultData = await LoadData();
+                resultItems = (ObservableCollection<YouTubeSchema>)resultData;
+                Random r = new Random();
+                int randomValue = r.Next(0, 20);
+                var finaldata = resultItems[randomValue];
 
-                
-                foreach (SyndicationItem item in feed.Items)
-                {
-                    video = new YoutubeVideo();
-
-                    video.VideoUrl = item.Links[0].Uri.ToString();
-                    string a = video.VideoUrl.Remove(0, 32);
-                    video.VideoId = a.Substring(0, 11);
-                    video.Title = item.Title.Text;
-                    //video.PubDate = item.PublishDate.DateTime;
-
-                    //video.ImageUrl = YouTube.GetThumbnailUri(video.VideoId, YouTubeThumbnailSize.Large);
-
-                    videosList.Add(video);
-                }
-                finalVideo = videosList[2];
-
-                string toastMessage = "Check out this new video";
-                // Launch a toast to show that the agent is running.
-                // The toast will not be shown if the foreground application is running.
-                ShellToast toast = new ShellToast();
-                toast.Title = video.Title;
-                toast.Content = toastMessage;
-                toast.NavigationUri = new System.Uri("/Views/DetailsPage.xaml?VideoId=" + finalVideo.VideoId, System.UriKind.Relative);
-                toast.Show();
-                NotifyComplete();
+                helper(finaldata);
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.ToString());
+                Debug.WriteLine("No network while executing backgroundAgent " + ex.ToString());
             }
-        } 
+        }
+
+        public async Task<IEnumerable<YouTubeSchema>> LoadData()
+        {
+            if (_data == null)
+            {
+                try
+                {
+                    var youTubeDataProvider = new YouTubeDataProvider(_url);
+                    _data = await youTubeDataProvider.Load();
+                }
+                catch (Exception ex)
+                {
+                    AppLogs.WriteError("TrailersDataSourceDataSource.LoadData", ex.ToString());
+                }
+            }
+            return _data;
+        }
+
+        private void helper(YouTubeSchema item)
+        {
+            videoItem = new YTHelper { Title = "Detail", Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
+            string toastMessage = "Check out this new video";
+            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+            // SearchInput is a TextBox defined in XAML.
+
+            if (!settings.Contains("videoItemSummary"))
+            {
+                settings.Add("videoItemSummary", videoItem.Summary);
+                settings.Add("videoItemExternalUrl", videoItem.ExternalUrl);
+                settings.Add("videoItemEmbedHtmlFragment", videoItem.EmbedHtmlFragment);
+            }
+            else
+            {
+                settings["videoItemSummary"] = videoItem.Summary;
+                settings["videoItemExternalUrl"] = videoItem.ExternalUrl;
+                settings["videoItemEmbedHtmlFragment"] = videoItem.EmbedHtmlFragment;
+            }
+            settings.Save();
+
+            // Launch a toast to show that the agent is running.
+            // The toast will not be shown if the foreground application is running.
+            ShellToast toast = new ShellToast();
+            toast.Title = videoItem.Title;
+            toast.Content = toastMessage;
+            toast.NavigationUri = new System.Uri("/Views/YouTubeViewer.xaml", System.UriKind.Relative);
+            toast.Show();
+            NotifyComplete();
+        }
+
+        
     }
 }
