@@ -50,7 +50,8 @@ namespace ScheduledTaskAgent1
         /// <remarks>
         /// This method is called when a periodic or resource intensive task is invoked
         /// </remarks>
-        private YouTubeSchema video;
+
+        #region All required variables
         private List<YouTubeSchema> videosList = new List<YouTubeSchema>();
         YTHelper videoItem;
         string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
@@ -60,15 +61,7 @@ namespace ScheduledTaskAgent1
         private ObservableCollection<YouTubeSchema> resultItems;
         private IEnumerable<YouTubeSchema> _data = null;
 
-        protected override void OnInvoke(ScheduledTask task)
-        {
-            //TODO: Add code to perform your task in background
-            DateTime dt = DateTime.Now;
-            int hours = dt.Hour;
-            int minute = dt.Minute;
-            
-
-            string[] topics = { "Apple",
+        private string[] topics = { "Apple",
                                 "Microsoft",
                               "Google",
                               "Facebook",
@@ -79,22 +72,84 @@ namespace ScheduledTaskAgent1
                               "iOS",
                               "Windows"};
 
-            //if (hours <= 23 && hours >= 14)
-            //{
-                Random r = new Random();
-                int randomTopic = r.Next(0, 10);
-                _queryString = topics[randomTopic];
-                _url = baseUrl + _queryString + baseEndUrl;
-                //GetData(_url);      
-                fetchData();
-            //}
+        DateTime dt = DateTime.Now;
+        DateTime lastTimeApp, lastTimeToast;
+        TimeSpan ts = new TimeSpan(0, 0, 0);
+        TimeSpan minTs = new TimeSpan(6, 0, 0);
+        TimeSpan extTs = new TimeSpan(6, 30, 0);
+        
+        string tempSetting1 = DateTime.Now.ToString();
+        string tempSetting2 = DateTime.Now.ToString();
+
+        #endregion
+
+
+        // Main method that run when the background agent is invoked
+        protected override void OnInvoke(ScheduledTask task)
+        {
+            int hours = dt.Hour;
+            int minute = dt.Minute;
+
             // If debugging is enabled, launch the agent again in one minute.
 #if DEBUG_AGENT
-  ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
+            ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
 #endif
-            
+
+            #region Readding Settings
+            if (IsolatedStorageSettings.ApplicationSettings.Contains("exdTime"))
+            {
+                string times = IsolatedStorageSettings.ApplicationSettings["exdTime"] as string;
+                extTs = TimeSpan.Parse(times);
+            }
+            if (IsolatedStorageSettings.ApplicationSettings.Contains("timeLastUsed"))
+            {
+                tempSetting1 = IsolatedStorageSettings.ApplicationSettings["timeLastUsed"] as string;
+            }
+            if (IsolatedStorageSettings.ApplicationSettings.Contains("timeLastUsed"))
+            {
+                tempSetting2 = IsolatedStorageSettings.ApplicationSettings["timeLastUsed"] as string;
+            }
+            #endregion
+
+            lastTimeApp = DateTime.Parse(tempSetting1);
+            lastTimeToast = DateTime.Parse(tempSetting2);
+            ts = dt.Subtract(lastTimeApp);
+
+            #region Check for the right time to Toast
+            if (ts > minTs && ts < extTs && lastTimeApp.Day == lastTimeToast.Day)
+            {
+                if (dt.Hour < 21 && dt.Hour > 7)
+                {
+                    Random r = new Random();
+                    int randomTopic = r.Next(0, 10);
+                    _queryString = topics[randomTopic];
+                    _url = baseUrl + _queryString + baseEndUrl;  
+                    fetchData();
+                }
+            }
+            else if (lastTimeApp.Day != lastTimeToast.Day)
+            {
+                if (dt.Hour > 16 && dt.Hour < 15)
+                {
+                    if (dt.Minute >= 0 && dt.Minute <= 30)
+                    {
+                        Random r = new Random();
+                        int randomTopic = r.Next(0, 10);
+                        _queryString = topics[randomTopic];
+                        _url = baseUrl + _queryString + baseEndUrl;
+                        fetchData();
+                    } 
+                }
+            }
+            else
+            {
+                NotifyComplete();
+            }
+            #endregion
         }
 
+
+        #region Background Job to fetch the YouTube data
         private async void fetchData()
         {
             try
@@ -104,12 +159,20 @@ namespace ScheduledTaskAgent1
                 Random r = new Random();
                 int randomValue = r.Next(0, 20);
                 var finaldata = resultItems[randomValue];
-
                 helper(finaldata);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("No network while executing backgroundAgent " + ex.ToString());
+                IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+                if (!settings.Contains("exdTime"))
+                {
+                    settings.Add("exdTime", extTs.Add(new TimeSpan(1,0,0)).ToString());
+                }
+                else
+                {
+                    settings["exdTime"] = extTs.Add(new TimeSpan(1, 0, 0)).ToString();
+                }
             }
         }
 
@@ -132,8 +195,8 @@ namespace ScheduledTaskAgent1
 
         private void helper(YouTubeSchema item)
         {
-            videoItem = new YTHelper { Title = "Detail", Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
-            string toastMessage = "Check out this new video";
+            videoItem = new YTHelper { Title = item.Title, Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
+            //string toastMessage = "Check out this new video";
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             // SearchInput is a TextBox defined in XAML.
 
@@ -155,12 +218,25 @@ namespace ScheduledTaskAgent1
             // The toast will not be shown if the foreground application is running.
             ShellToast toast = new ShellToast();
             toast.Title = videoItem.Title;
-            toast.Content = toastMessage;
+            //toast.Content = toastMessage;
             toast.NavigationUri = new System.Uri("/Views/YouTubeViewer.xaml", System.UriKind.Relative);
             toast.Show();
+
+            
+            // Note the time when the app is opened
+            if (!settings.Contains("toastLastShown"))
+            {
+                settings.Add("toastLastShown", DateTime.Now.ToString());
+            }
+            else
+            {
+                settings["toastLastShown"] = DateTime.Now.ToString();
+            }
+
+            extTs = new TimeSpan(6, 30, 0);
             NotifyComplete();
         }
+        #endregion
 
-        
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.Phone.Net.NetworkInformation;
 
 using AppStudio.Services;
 using Microsoft.Phone.Scheduler;
+using System.IO.IsolatedStorage;
 
 namespace AppStudio
 {
@@ -21,11 +22,69 @@ namespace AppStudio
         string resourceIntensiveTaskName = "ResourceIntensiveAgent";
         public bool agentsAreEnabled = true;
 
+        #region Data for the MainPage
+        string[] categoryType = {
+                                    "Search",
+                                    "Playlist"
+                                };
+
+        string[] categoryName = {
+                                    "Trailers",
+                                    "Music",
+                                    "Java",
+                                    "iPhone 6",
+                                    "Google I/O"
+                                };
+
+        string[] queryName = {
+                                 "Movie Trailers 2014",
+                                 "Music 2014",
+                                 "PLDAA5DE54FB5215EC", //Playlist ID
+                                 "iphone 6",
+                                 "PLOU2XLYxmsIJQe6T9CKafiDm7p_LCCx6F" //Playlist ID
+                             };
+
+
+        #endregion
+
         public MainPage()
         {
             InitializeComponent();
             MainViewModels = new MainViewModels();
             StartPeriodicAgent();
+        }
+
+        void SaveSettings()
+        {
+            string[] finalQuery = {
+                                      categoryType[0] + queryName[0],
+                                      categoryType[0] + queryName[1],
+                                      categoryType[1] + queryName[2],
+                                      categoryType[0] + queryName[3],
+                                      categoryType[1] + queryName[4],
+                                  };
+
+            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+            // SearchInput is a TextBox defined in XAML.
+            for (int i = 0; i < 5; i++)
+            {
+                if (!settings.Contains("Item" + (i + 1) + "Data"))
+                {
+                    settings.Add("Item" + (i+1) + "Data", finalQuery[i]);
+                }
+                else
+                {
+                    settings["Item" + (i + 1) + "Data"] = finalQuery[i];
+                }
+            }
+            settings.Save();
+
+            //Titles for items
+            Item1.Header = categoryName[0];
+            Item2.Header = categoryName[1];
+            Item3.Header = categoryName[2];
+            Item4.Header = categoryName[3];
+            Item5.Header = categoryName[4];
         }
 
         public MainViewModels MainViewModels { get; private set; }
@@ -39,6 +98,9 @@ namespace AppStudio
 
             DataContext = MainViewModels;
             MainViewModels.UpdateAppBar();
+
+            SaveSettings();
+
             await MainViewModels.LoadData(NetworkInterface.GetIsNetworkAvailable());
 
             base.OnNavigatedTo(e);
@@ -66,6 +128,17 @@ namespace AppStudio
 
         private void StartPeriodicAgent()
         {
+            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+            // Note the time when the app is opened
+            if (!settings.Contains("timeLastUsed"))
+            {
+                settings.Add("timeLastUsed", DateTime.Now.ToString());
+            }
+            else
+            {
+                settings["timeLastUsed"] = DateTime.Now.ToString();
+            }
+
             // Variable for tracking enabled status of background agents for this app.
             agentsAreEnabled = true;
 

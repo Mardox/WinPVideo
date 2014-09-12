@@ -9,16 +9,16 @@ using Microsoft.Phone.Shell;
 
 namespace AppStudio.Data
 {
-    public class MusicViewModel : ViewModelBase<YouTubeSchema>
+    public class Item1ViewModel : ViewModelBase<YouTubeSchema>
     {
         override protected string CacheKey
         {
-            get { return "MusicDataSource"; }
+            get { return "Item1DataSource"; }
         }
 
         override protected IDataSource<YouTubeSchema> CreateDataSource()
         {
-            return new MusicDataSource(); // YouTubeDataSource
+            return new Item1DataSource(); // YouTubeDataSource
         }
 
         override public bool IsGoToSourceVisible
@@ -48,7 +48,7 @@ namespace AppStudio.Data
 
         private YTHelper GetVideo(YouTubeSchema item)
         {
-            return new YTHelper { Title = "Detail", Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
+            return new YTHelper { Title = item.Title, Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
         }
     }
 }

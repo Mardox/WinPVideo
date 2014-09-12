@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class SearchViewModel : ViewModelBase<YouTubeSchema>
+    public class Item5ViewModel : ViewModelBase<YouTubeSchema>
     {
         override protected string CacheKey
         {
-            get { return "SearchDataSource"; }
+            get { return "Item5DataSource"; }
         }
 
         override protected IDataSource<YouTubeSchema> CreateDataSource()
         {
-            return new SearchDataSource(); // YouTubeDataSource
+            return new Item5DataSource(); // YouTubeDataSource
         }
 
         override public bool IsGoToSourceVisible

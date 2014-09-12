@@ -118,10 +118,6 @@
     <Content Include="Assets\Icons\Light\TextToSpeech.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\NoImage.png" />
-    <Content Include="Views\DataTemplates\Trailers.xaml" />
-    <Content Include="Views\DataTemplates\Trailers1Detail.xaml" />
-    <Content Include="Views\DataTemplates\Music.xaml" />
-    <Content Include="Views\DataTemplates\Music1Detail.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\LockScreenImage.png" />
@@ -157,13 +153,16 @@
     <Compile Include="Services\ShareServices.cs" />
     <Compile Include="Services\SpeechServices.cs" />
     <Compile Include="Services\TileServices.cs" />
+    <Compile Include="ViewModels\Item5ViewModel.cs" />
+    <Compile Include="ViewModels\Item4ViewModel.cs" />
     <Compile Include="ViewModels\PrivacyViewModel.cs" />
+    <Compile Include="ViewModels\Item3ViewModel.cs" />
     <Compile Include="ViewModels\SearchViewModel.cs" />
     <Compile Include="ViewModels\YouTube\YTHelper.cs" />
     <Compile Include="ViewModels\YouTube\YTViewerViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="ViewModels\TrailersViewModel.cs" />
-    <Compile Include="ViewModels\MusicViewModel.cs" />
+    <Compile Include="ViewModels\Item1ViewModel.cs" />
+    <Compile Include="ViewModels\Item2ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Views\ImageViewer.xaml.cs">
@@ -190,6 +189,28 @@
     <Content Include="Views\DataTemplates\Search1Detail.xaml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\DataTemplates\Item.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\DataTemplates\ItemDetail.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Page Include="Views\DataTemplates\Music.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DataTemplates\Music1Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DataTemplates\Trailers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DataTemplates\Trailers1Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ImageViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

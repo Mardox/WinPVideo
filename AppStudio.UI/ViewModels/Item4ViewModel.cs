@@ -1,31 +1,31 @@
-using System;
-using System.Windows;
-using System.Windows.Input;
-
-
-using AppStudio.Data.YouTube;using AppStudio.Services;
-
+﻿using AppStudio.Data.YouTube;
+using AppStudio.Services;
 using Microsoft.Phone.Shell;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class TrailersViewModel : ViewModelBase<YouTubeSchema>
+    public class Item4ViewModel : ViewModelBase<YouTubeSchema>
     {
         override protected string CacheKey
         {
-            get { return "TrailersDataSource"; }
+            get { return "Item4DataSource"; }
         }
 
         override protected IDataSource<YouTubeSchema> CreateDataSource()
         {
-            return new TrailersDataSource(); // YouTubeDataSource
+            return new Item4DataSource(); // YouTubeDataSource
         }
 
         override public bool IsGoToSourceVisible
         {
             get { return ViewType == ViewTypes.Detail; }
         }
-        
+
         override public void GoToSource()
         {
             base.GoToSource("{ExternalUrl}");
@@ -48,7 +48,7 @@ namespace AppStudio.Data
 
         private YTHelper GetVideo(YouTubeSchema item)
         {
-            return new YTHelper { Title = "Detail", Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
+            return new YTHelper { Title = item.Title, Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
         }
     }
 }

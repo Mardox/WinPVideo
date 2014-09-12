@@ -1,31 +1,31 @@
-﻿using AppStudio.Data.YouTube;
-using AppStudio.Services;
-using Microsoft.Phone.Shell;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
+
+
+using AppStudio.Data.YouTube;using AppStudio.Services;
+
+using Microsoft.Phone.Shell;
 
 namespace AppStudio.Data
 {
-    public class SearchViewModel : ViewModelBase<YouTubeSchema>
+    public class Item2ViewModel : ViewModelBase<YouTubeSchema>
     {
         override protected string CacheKey
         {
-            get { return "SearchDataSource"; }
+            get { return "Item2DataSource"; }
         }
 
         override protected IDataSource<YouTubeSchema> CreateDataSource()
         {
-            return new SearchDataSource(); // YouTubeDataSource
+            return new Item2DataSource(); // YouTubeDataSource
         }
 
         override public bool IsGoToSourceVisible
         {
             get { return ViewType == ViewTypes.Detail; }
         }
-
+        
         override public void GoToSource()
         {
             base.GoToSource("{ExternalUrl}");

@@ -87,6 +87,9 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSources\Item5DataSource.cs" />
+    <Compile Include="DataSources\Item4DataSource.cs" />
+    <Compile Include="DataSources\Item3DataSource.cs" />
     <Compile Include="DataSources\SearchDataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AppStorage\AppCache.cs" />
@@ -104,8 +107,8 @@
     <Compile Include="DataProviders\YouTubeDataProvider.cs" />
     <Compile Include="DataSchemas\RssSchema.cs" />
     <Compile Include="DataSchemas\YouTubeSchema.cs" />
-    <Compile Include="DataSources\TrailersDataSource.cs" />
-    <Compile Include="DataSources\MusicDataSource.cs" />
+    <Compile Include="DataSources\Item1DataSource.cs" />
+    <Compile Include="DataSources\Item2DataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -8,27 +8,45 @@ namespace AppStudio
 {
     public class MainViewModels : BindableBase
     {
-       private TrailersViewModel _trailersModel;
-       private MusicViewModel _musicModel;
+       private Item1ViewModel _item1Model;
+       private Item2ViewModel _item2Model;
        private SearchViewModel _searchModel;
+       private Item3ViewModel _item3Model;
+       private Item4ViewModel _item4Model;
+       private Item5ViewModel _item5Model;
 
         private ViewModelBase _selectedItem = null;
         private PrivacyViewModel _privacyModel;
 
         public MainViewModels()
         {
-            _selectedItem = TrailersModel;
+            _selectedItem = Item1Model;
             _privacyModel = new PrivacyViewModel();
         }
  
-        public TrailersViewModel TrailersModel
+        public Item1ViewModel Item1Model
         {
-            get { return _trailersModel ?? (_trailersModel = new TrailersViewModel()); }
+            get { return _item1Model ?? (_item1Model = new Item1ViewModel()); }
         }
  
-        public MusicViewModel MusicModel
+        public Item2ViewModel Item2Model
         {
-            get { return _musicModel ?? (_musicModel = new MusicViewModel()); }
+            get { return _item2Model ?? (_item2Model = new Item2ViewModel()); }
+        }
+
+        public Item3ViewModel Item3Model
+        {
+            get { return _item3Model ?? (_item3Model = new Item3ViewModel()); }
+        }
+
+        public Item4ViewModel Item4Model
+        {
+            get { return _item4Model ?? (_item4Model = new Item4ViewModel()); }
+        }
+
+        public Item5ViewModel Item5Model
+        {
+            get { return _item5Model ?? (_item5Model = new Item5ViewModel()); }
         }
 
         public SearchViewModel SearchModel
@@ -38,8 +56,11 @@ namespace AppStudio
 
         public void SetViewType(ViewTypes viewType)
         {
-            TrailersModel.ViewType = viewType;
-            MusicModel.ViewType = viewType;
+            Item1Model.ViewType = viewType;
+            Item2Model.ViewType = viewType;
+            Item3Model.ViewType = viewType;
+            Item4Model.ViewType = viewType;
+            Item5Model.ViewType = viewType;
             SearchModel.ViewType = viewType;
         }
 
@@ -57,7 +78,7 @@ namespace AppStudio
         {
             get
             {
-                if (SelectedItem == null || SelectedItem == TrailersModel)
+                if (SelectedItem == null || SelectedItem == Item1Model)
                 {
                     return true;
                 }
@@ -67,17 +88,17 @@ namespace AppStudio
 
         public bool IsLockScreenVisible
         {
-            get { return SelectedItem == null || SelectedItem == TrailersModel; }
+            get { return SelectedItem == null || SelectedItem == Item1Model; }
         }
 
         public bool IsAboutVisible
         {
-            get { return SelectedItem == null || SelectedItem == TrailersModel; }
+            get { return SelectedItem == null || SelectedItem == Item1Model; }
         }
 
         public bool IsPrivacyVisible
         {
-            get { return SelectedItem == null || SelectedItem == TrailersModel; }
+            get { return SelectedItem == null || SelectedItem == Item1Model; }
         }
 
 
@@ -95,8 +116,11 @@ namespace AppStudio
         {
             var loadTasks = new Task[]
             { 
-                TrailersModel.LoadItems(isNetworkAvailable),
-                MusicModel.LoadItems(isNetworkAvailable),
+                Item1Model.LoadItems(isNetworkAvailable),
+                Item2Model.LoadItems(isNetworkAvailable),
+                Item3Model.LoadItems(isNetworkAvailable),
+                Item4Model.LoadItems(isNetworkAvailable),
+                Item5Model.LoadItems(isNetworkAvailable),
             };
             await Task.WhenAll(loadTasks);
         }
