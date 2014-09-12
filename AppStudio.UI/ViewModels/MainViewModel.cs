@@ -180,5 +180,16 @@ namespace AppStudio
                 });
             }
         }
+
+        public ICommand SettingsCommand
+        {
+            get
+            {
+                return new DelegateCommand(() =>
+                {
+                    NavigationServices.NavigateToPage("SettingsPage");
+                });
+            }
+        }
     }
 }

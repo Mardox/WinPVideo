@@ -24,6 +24,7 @@ namespace AppStudio.Views
 
         void SearchPage_Loaded(object sender, RoutedEventArgs e)
         {
+            SearchInput.Focus();
             if (IsolatedStorageSettings.ApplicationSettings.Contains("searchData"))
             {
                 callLoadData();

@@ -10,6 +10,7 @@ using Microsoft.Phone.Net.NetworkInformation;
 using AppStudio.Services;
 using Microsoft.Phone.Scheduler;
 using System.IO.IsolatedStorage;
+using System.Collections.Generic;
 
 namespace AppStudio
 {
@@ -51,7 +52,25 @@ namespace AppStudio
         {
             InitializeComponent();
             MainViewModels = new MainViewModels();
-            StartPeriodicAgent();
+
+            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+            try
+            {
+                if ((bool)settings["toastNotifications"])
+                {
+                    StartPeriodicAgent();
+                }
+                else
+                {
+                    RemoveAgent(periodicTaskName);
+                }
+            }
+            catch(KeyNotFoundException ex)
+            {
+                StartPeriodicAgent();
+            }
+
+            
         }
 
         void SaveSettings()

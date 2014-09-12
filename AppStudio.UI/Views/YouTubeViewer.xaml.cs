@@ -49,7 +49,14 @@ namespace AppStudio
 
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
         {
-            NavigationServices.NavigateToPage("MainPage");
+            if (PhoneApplicationService.Current.State.ContainsKey("videoObject"))
+            {
+                NavigationService.GoBack();
+            }
+            else
+            {
+                NavigationServices.NavigateToPage("MainPage");
+            }
             base.OnBackKeyPress(e);
         }
     }
