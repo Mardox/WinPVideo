@@ -54,7 +54,7 @@ namespace ScheduledTaskAgent1
         private List<YouTubeSchema> videosList = new List<YouTubeSchema>();
         YTHelper videoItem;
         string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
-        string baseEndUrl = "&orderby=published&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
+        string baseEndUrl = "&orderby=viewCount&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
         string _queryString = null;
         string _url = "";
         private ObservableCollection<YouTubeSchema> resultItems;

@@ -6,7 +6,7 @@
     
     <DataTemplate x:Name="SearchHeader">
         <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-            <TextBlock Text="Results" FontSize="56" Foreground="{StaticResource AppForegroundColor}"/>
+            <TextBlock Text="Results" FontSize="56" />
         </StackPanel>
     </DataTemplate>
 
@@ -25,9 +25,9 @@
                         </Grid.RowDefinitions>
 
                         <Image Source="{Binding ImageUrl, Converter = {StaticResource ThumbnailConverter}, ConverterParameter = 100}" VerticalAlignment="Top" Stretch="UniformToFill" Width="100" MaxHeight="100" Margin="5,10,0,5" />
-                        <TextBlock TextWrapping="Wrap" FontSize="32" Foreground="{StaticResource AppForegroundColor}" 
+                        <TextBlock TextWrapping="Wrap" FontSize="32"
 									          Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter = 140}" Margin="10,0" Grid.Column="1" Grid.Row="0"/>
-                        <TextBlock TextWrapping="Wrap" FontSize="18" Foreground="{StaticResource AppForegroundColor}"
+                        <TextBlock TextWrapping="Wrap" FontSize="18" 
 								          TextTrimming="WordEllipsis" Text="{Binding Summary, Converter={StaticResource TextPlainConverter}, ConverterParameter = 280}" Margin="10,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Height="75"/>
                     </Grid>
                 </DataTemplate>

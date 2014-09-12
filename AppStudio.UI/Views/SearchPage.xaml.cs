@@ -16,7 +16,6 @@ namespace AppStudio.Views
     public partial class SearchPage : PhoneApplicationPage
     {
         public MainViewModels MainViewModels { get; private set; }
-        private string fromToast;
         public SearchPage()
         {
             InitializeComponent();
@@ -28,6 +27,10 @@ namespace AppStudio.Views
             if (IsolatedStorageSettings.ApplicationSettings.Contains("searchData"))
             {
                 callLoadData();
+            }
+            else
+            {
+                ProgressBar.Visibility = Visibility.Collapsed;
             }
         }
 

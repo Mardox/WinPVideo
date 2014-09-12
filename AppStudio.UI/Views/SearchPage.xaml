@@ -23,7 +23,6 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="{Binding LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
             <Grid Width="Auto">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -36,10 +35,10 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:Panorama Name="Container" ItemsSource="{Binding}" >
+            <phone:Panorama Name="Container" ItemsSource="{Binding}">
                 <phone:PanoramaItem Name="SearchItem" HeaderTemplate="{StaticResource SearchHeader}" Content="{Binding SearchModel}" ContentTemplate="{StaticResource SearchContent}"/>
             </phone:Panorama>
-            <ProgressBar IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
+            <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" VerticalAlignment="Center" Height="16"
                    Visibility="{Binding ElementName=Container, Path=SelectedItem.Content.ProgressBarVisibility}" />
         </Grid>
     </Grid>

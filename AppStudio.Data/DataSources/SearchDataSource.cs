@@ -10,7 +10,7 @@ namespace AppStudio.Data
     public class SearchDataSource : IDataSource<YouTubeSchema>
     {
         private string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
-        private string baseEndUrl = "&orderby=published&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
+        private string baseEndUrl = "&orderby=relevance&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
         private string _queryString = null;
         private string _url = "";
 

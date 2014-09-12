@@ -6,7 +6,7 @@ namespace AppStudio.Data
 {
     public class TrailersDataSource : IDataSource<YouTubeSchema>
     {
-        private const string _url =  @"https://gdata.youtube.com/feeds/api/videos?q=2014+movie+trailers&orderby=published&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
+        private const string _url = @"https://gdata.youtube.com/feeds/api/videos?q=2014+movie+trailers&orderby=relevance&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
 
         private IEnumerable<YouTubeSchema> _data = null;
 

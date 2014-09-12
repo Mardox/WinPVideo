@@ -19,4 +19,3 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\HtmlA
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\Newtonsoft.Json.xml
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.pdb
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.csprojResolveAssemblyReference.cache
