@@ -115,6 +115,15 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check out this cool video. Shared from my windows phone using.
+        /// </summary>
+        public static string CustomShareMessage {
+            get {
+                return ResourceManager.GetString("CustomShareMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Developed by:.
         /// </summary>
         public static string DevelopedBy {

@@ -212,4 +212,7 @@
   <data name="TwitterHandle" xml:space="preserve">
     <value>@kalyandechiraju</value>
   </data>
+  <data name="CustomShareMessage" xml:space="preserve">
+    <value>Check out this cool video. Shared from my windows phone using</value>
+  </data>
 </root>

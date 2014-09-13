@@ -11,12 +11,15 @@ using AppStudio.Data;
 using System.IO.IsolatedStorage;
 using AppStudio.Services;
 using GoogleAds;
+using Microsoft.Phone.Tasks;
+using AppStudio.Resources;
 
 namespace AppStudio
 {
     public partial class YouTubeViewer : PhoneApplicationPage
     {
         private InterstitialAd interstitialAd;
+        public YTViewerViewModel YouTubeModel { get; set; }
         public YouTubeViewer()
         {
             InitializeComponent();
@@ -47,7 +50,7 @@ namespace AppStudio
 
 
 
-        public YTViewerViewModel YouTubeModel { get; set; }
+        
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -92,6 +95,16 @@ namespace AppStudio
                 interstitialAd.ShowAd();
             }
             base.OnBackKeyPress(e);
+        }
+
+        private void ShareClick(object sender, EventArgs e)
+        {
+            ShareLinkTask shareLinkTask = new ShareLinkTask();
+            shareLinkTask.Title = YouTubeModel.SelectedItem.Title + AppResources.CustomShareMessage + " " + AppResources.ApplicationTitle;
+            shareLinkTask.LinkUri = new Uri(YouTubeModel.SelectedItem.ExternalUrl, UriKind.Absolute);
+            //shareLinkTask.Message = AppResources.CustomShareMessage + AppResources.ApplicationTitle;
+
+            shareLinkTask.Show();
         }
     }
 }

@@ -162,10 +162,9 @@
                                          IconUri="Assets/Icons/Dark/GoToSource.png" />
 
         <appBar:ApplicationBarBehavior.MenuItems>
-          <appBar:ApplicationBarMenuItem Text="{Binding LocalizedResources.ShareItem, Source={StaticResource LocalizedStrings}}"
-                                       Command="{Binding ShareItemCommand}"
-                                       IsVisible="{Binding IsShareItemVisible}" />
-        </appBar:ApplicationBarBehavior.MenuItems>
+                    <appBar:ApplicationBarMenuItem Text="{Binding LocalizedResources.ShareItem, Source={StaticResource LocalizedStrings}}"
+                                       Click="ShareClick"/>
+                </appBar:ApplicationBarBehavior.MenuItems>
 
       </appBar:ApplicationBarBehavior>
     </interactive:Interaction.Behaviors>

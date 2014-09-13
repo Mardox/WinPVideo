@@ -91,9 +91,7 @@
                                                  Command="{Binding SearchCommand}"
                                                  IconUri="Assets/Icons/Dark/feature.search.png"/>
           <appBar:ApplicationBarBehavior.MenuItems>
-            <appBar:ApplicationBarMenuItem Text="{Binding LocalizedResources.ShareItem, Source={StaticResource LocalizedStrings}}"
-                                         Command="{Binding ElementName=Container, Path=SelectedItem.Content.ShareItemCommand}"
-                                         IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsShareItemVisible}" />
+            
                     <appBar:ApplicationBarMenuItem Text="settings"
                                              Command="{Binding SettingsCommand}"/>
                     <appBar:ApplicationBarMenuItem Text="about"
