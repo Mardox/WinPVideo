@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/13/2014 3:51:12 PM">
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/13/2014 3:51:10 PM" />
+﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/13/2014 4:13:25 PM">
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/13/2014 4:13:23 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\feature.search.png" archivePath="Assets\Icons\Dark\feature.search.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\GoToSource.png" archivePath="Assets\Icons\Dark\GoToSource.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\LockScreen.png" archivePath="Assets\Icons\Dark\LockScreen.png" lastWriteTime="9/13/2014 8:45:30 AM" />
@@ -28,7 +28,7 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\SplashScreenImage.png" archivePath="SplashScreenImage.png" lastWriteTime="9/13/2014 8:45:34 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="9/13/2014 12:52:02 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="9/13/2014 12:52:02 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Search.xaml" archivePath="Views\DataTemplates\Search.xaml" lastWriteTime="9/13/2014 2:48:36 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Search.xaml" archivePath="Views\DataTemplates\Search.xaml" lastWriteTime="9/13/2014 4:13:03 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Search1Detail.xaml" archivePath="Views\DataTemplates\Search1Detail.xaml" lastWriteTime="9/13/2014 8:45:34 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Item.xaml" archivePath="Views\DataTemplates\Item.xaml" lastWriteTime="9/13/2014 2:47:58 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\ItemDetail.xaml" archivePath="Views\DataTemplates\ItemDetail.xaml" lastWriteTime="9/13/2014 8:45:34 AM" />

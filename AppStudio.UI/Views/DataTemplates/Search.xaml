@@ -20,12 +20,12 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="100"/>
                             <!--<RowDefinition MaxHeight="80"/>-->
                         </Grid.RowDefinitions>
 
                         <Image Source="{Binding ImageUrl, Converter = {StaticResource ThumbnailConverter}, ConverterParameter = 100}" VerticalAlignment="Top" Stretch="UniformToFill" Width="100" MaxHeight="100" Margin="5,10,0,5" />
-                        <TextBlock TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="28" Foreground="{StaticResource AppForegroundColor}" 
+                        <TextBlock TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="28"  
 									          Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter = 140}" Margin="10,10" Grid.Column="1" Grid.Row="0"/>
                         <!-- <TextBlock TextWrapping="Wrap" FontSize="18" Foreground="{StaticResource AppForegroundColor}"
 								          TextTrimming="WordEllipsis" Text="{Binding Summary, Converter={StaticResource TextPlainConverter}, ConverterParameter = 280}" Margin="10,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Height="75"/>
