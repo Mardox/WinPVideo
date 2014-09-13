@@ -4,8 +4,8 @@ using System.Windows.Input;
 using AppStudio.Data;
 using AppStudio.Services;
 using AppStudio.Resources;
-using Coding4Fun.Toolkit.Controls;
 using System;
+using Microsoft.Phone.Tasks;
 
 namespace AppStudio
 {
@@ -146,9 +146,7 @@ namespace AppStudio
             {
                 return new DelegateCommand(() =>
                 {
-                    AboutPrompt about = new AboutPrompt();
-                    about.Show(AppResources.DevelopedBy, AppResources.TwitterHandle, AppResources.EmailAddress, AppResources.HomeUrl);
-                    //NavigationServices.NavigateToPage("AboutThisAppPage");
+                    NavigationServices.NavigateToPage("AboutThisAppPage");
                 });
             }
         }
@@ -193,6 +191,22 @@ namespace AppStudio
                 return new DelegateCommand(() =>
                 {
                     NavigationServices.NavigateToPage("SettingsPage");
+                });
+            }
+        }
+
+        public ICommand MoreCommand
+        {
+            get
+            {
+                return new DelegateCommand(() =>
+                {
+                    MarketplaceSearchTask marketplaceSearchTask = new MarketplaceSearchTask();
+
+                    marketplaceSearchTask.ContentType = MarketplaceContentType.Applications;
+                    marketplaceSearchTask.SearchTerms = AppResources.MarketPlaceName;
+
+                    marketplaceSearchTask.Show(); ;
                 });
             }
         }

@@ -10,6 +10,7 @@ using Microsoft.Phone.Shell;
 using System.IO.IsolatedStorage;
 using Microsoft.Phone.Net.NetworkInformation;
 using System.Diagnostics;
+using AppStudio.Resources;
 
 namespace AppStudio.Views
 {
@@ -20,7 +21,6 @@ namespace AppStudio.Views
         {
             InitializeComponent();
             Loaded += SearchPage_Loaded;
-
             searchAdUnit.FailedToReceiveAd += searchAdUnit_FailedToReceiveAd;
         }
 

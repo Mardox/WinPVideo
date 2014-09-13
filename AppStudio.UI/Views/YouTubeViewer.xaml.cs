@@ -26,8 +26,7 @@ namespace AppStudio
             YouTubeModel = new YTViewerViewModel();
             DataContext = YouTubeModel;
 
-
-            interstitialAd = new InterstitialAd("ca-app-pub-3230884902788293/6718136398");
+            interstitialAd = new InterstitialAd(AppResources.AdMobInterstitial);
             AdRequest adRequest = new AdRequest();
 
             interstitialAd.ReceivedAd += OnAdReceived;
@@ -81,7 +80,22 @@ namespace AppStudio
             {
                 try
                 {
-                    interstitialAd.ShowAd();
+                    int count = 1;
+                    IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+                    if (!settings.Contains("videoViewerBackCount"))
+                    {
+                        settings.Add("videoViewerBackCount", 1);
+                    }
+                    else
+                    {
+                        count = (int) IsolatedStorageSettings.ApplicationSettings["videoViewerBackCount"];
+                        settings["videoViewerBackCount"] = count + 1;
+                    }
+                    settings.Save();
+                    if (count % 3 == 0)
+                    {
+                        interstitialAd.ShowAd();
+                    }
                 }
                 catch (Exception ex)
                 {

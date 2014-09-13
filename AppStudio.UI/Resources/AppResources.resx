@@ -206,13 +206,16 @@
   <data name="Search" xml:space="preserve">
     <value>search</value>
   </data>
-  <data name="EmailAddress" xml:space="preserve">
-    <value>kalyandechiraju@outlook.com</value>
-  </data>
-  <data name="TwitterHandle" xml:space="preserve">
-    <value>@kalyandechiraju</value>
-  </data>
   <data name="CustomShareMessage" xml:space="preserve">
     <value>Check out this cool video. Shared from my windows phone using</value>
+  </data>
+  <data name="MarketPlaceName" xml:space="preserve">
+    <value>Microsoft</value>
+  </data>
+  <data name="AdMobBanner" xml:space="preserve">
+    <value>ca-app-pub-3230884902788293/3764669994</value>
+  </data>
+  <data name="AdMobInterstitial" xml:space="preserve">
+    <value>ca-app-pub-3230884902788293/5241403198</value>
   </data>
 </root>

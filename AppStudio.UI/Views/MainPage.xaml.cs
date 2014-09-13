@@ -22,10 +22,9 @@ namespace AppStudio
         //for backgroundtask
         PeriodicTask periodicTask;
         string periodicTaskName = "PeriodicAgent";
-        ResourceIntensiveTask resourceIntensiveTask;
-        string resourceIntensiveTaskName = "ResourceIntensiveAgent";
         public bool agentsAreEnabled = true;
         private InterstitialAd interstitialAd;
+        private MainPageData data;
 
         public MainPage()
         {
@@ -50,8 +49,7 @@ namespace AppStudio
                 StartPeriodicAgent();
             }
 
-
-            interstitialAd = new InterstitialAd("ca-app-pub-3230884902788293/5241403198");
+            interstitialAd = new InterstitialAd(AppResources.AdMobInterstitial);
             AdRequest adRequest = new AdRequest();
 
             interstitialAd.ReceivedAd += OnAdReceived;
@@ -94,7 +92,7 @@ namespace AppStudio
         #region Data for the MainPage
         void SaveSettings()
         {
-            MainPageData data = new MainPageData();
+            data = new MainPageData();
             string[] finalQuery = data.returnFinalQuery();
             string[] categoryName = data.returnCategoryName();
 
@@ -224,53 +222,6 @@ namespace AppStudio
             }
         }
 
-        private void StartResourceIntensiveAgent()
-        {
-            // Variable for tracking enabled status of background agents for this app.
-            agentsAreEnabled = true;
-
-            resourceIntensiveTask = ScheduledActionService.Find(resourceIntensiveTaskName) as ResourceIntensiveTask;
-
-            // If the task already exists and background agents are enabled for the
-            // application, you must remove the task and then add it again to update 
-            // the schedule.
-            if (resourceIntensiveTask != null)
-            {
-                RemoveAgent(resourceIntensiveTaskName);
-            }
-
-            resourceIntensiveTask = new ResourceIntensiveTask(resourceIntensiveTaskName);
-
-            // The description is required for periodic agents. This is the string that the user
-            // will see in the background services Settings page on the device.
-            resourceIntensiveTask.Description = "This demonstrates a resource-intensive task.";
-
-            // Place the call to Add in a try block in case the user has disabled agents.
-            try
-            {
-                ScheduledActionService.Add(resourceIntensiveTask);
-
-                // If debugging is enabled, use LaunchForTest to launch the agent in one minute.
-#if(DEBUG_AGENT)
-                ScheduledActionService.LaunchForTest(resourceIntensiveTaskName, TimeSpan.FromSeconds(10));
-#endif
-            }
-            catch (InvalidOperationException exception)
-            {
-                if (exception.Message.Contains("BNS Error: The action is disabled"))
-                {
-                    MessageBox.Show("Background agents for this application have been disabled by the user.");
-                    agentsAreEnabled = false;
-
-                }
-            }
-            catch (SchedulerServiceException)
-            {
-                // No user action required.
-            }
-
-
-        }
         private void RemoveAgent(string name)
         {
             try

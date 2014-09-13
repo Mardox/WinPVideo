@@ -25,7 +25,7 @@
 
         <GoogleAds:AdView
             Name="searchAdUnit"
-                AdUnitID="ca-app-pub-3230884902788293/3764669994"
+                AdUnitID="{Binding Path=LocalizedResources.AdMobBanner, Source={StaticResource LocalizedStrings}}"
                 Format="Banner"
                 VerticalAlignment="Bottom" />
         <!--TitlePanel contains the name of the application and page title-->

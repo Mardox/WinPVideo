@@ -70,6 +70,24 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/3764669994.
+        /// </summary>
+        public static string AdMobBanner {
+            get {
+                return ResourceManager.GetString("AdMobBanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/5241403198.
+        /// </summary>
+        public static string AdMobInterstitial {
+            get {
+                return ResourceManager.GetString("AdMobInterstitial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to add.
         /// </summary>
         public static string AppBarButtonText {
@@ -133,15 +151,6 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to kalyandechiraju@outlook.com.
-        /// </summary>
-        public static string EmailAddress {
-            get {
-                return ResourceManager.GetString("EmailAddress", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Error sharing.
         /// </summary>
         public static string Error {
@@ -174,6 +183,15 @@ namespace AppStudio.Resources {
         public static string LockScreen {
             get {
                 return ResourceManager.GetString("LockScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Microsoft.
+        /// </summary>
+        public static string MarketPlaceName {
+            get {
+                return ResourceManager.GetString("MarketPlaceName", resourceCulture);
             }
         }
         
@@ -336,15 +354,6 @@ namespace AppStudio.Resources {
         public static string TapSendMessage {
             get {
                 return ResourceManager.GetString("TapSendMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @kalyandechiraju.
-        /// </summary>
-        public static string TwitterHandle {
-            get {
-                return ResourceManager.GetString("TwitterHandle", resourceCulture);
             }
         }
     }

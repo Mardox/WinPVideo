@@ -52,7 +52,7 @@
             <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
         </phone:Panorama>
         <GoogleAds:AdView 
-            AdUnitID="ca-app-pub-3230884902788293/3764669994"
+            AdUnitID="{Binding Path=LocalizedResources.AdMobBanner, Source={StaticResource LocalizedStrings}}"
             Format="Banner"
             VerticalAlignment="Bottom" />
 
@@ -83,10 +83,12 @@
                                            IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsGoToSourceVisible}"
                                            IconUri="Assets/Icons/Dark/GoToSource.png" />
 
+                <!--
           <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.LockScreen, Source={StaticResource LocalizedStrings}}"
                                            Command="{Binding LockScreenCommand}"
                                            IsVisible="{Binding IsLockScreenVisible}"
                                            IconUri="Assets/Icons/Dark/LockScreen.png" />
+             -->
                 <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.Search, Source={StaticResource LocalizedStrings}}"
                                                  Command="{Binding SearchCommand}"
                                                  IconUri="Assets/Icons/Dark/feature.search.png"/>
@@ -94,8 +96,8 @@
             
                     <appBar:ApplicationBarMenuItem Text="settings"
                                              Command="{Binding SettingsCommand}"/>
-                    <appBar:ApplicationBarMenuItem Text="about"
-                                             Command="{Binding AboutCommand}"/>
+                    <appBar:ApplicationBarMenuItem Text="more"
+                                             Command="{Binding MoreCommand}"/>
 
 
                 </appBar:ApplicationBarBehavior.MenuItems>
