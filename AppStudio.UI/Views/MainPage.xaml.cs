@@ -12,6 +12,8 @@ using Microsoft.Phone.Scheduler;
 using System.IO.IsolatedStorage;
 using System.Collections.Generic;
 using GoogleAds;
+using AppStudio.Resources;
+using System.Diagnostics;
 
 namespace AppStudio
 {
@@ -23,33 +25,8 @@ namespace AppStudio
         ResourceIntensiveTask resourceIntensiveTask;
         string resourceIntensiveTaskName = "ResourceIntensiveAgent";
         public bool agentsAreEnabled = true;
-
         private InterstitialAd interstitialAd;
-
-        #region Data for the MainPage
-        string[] categoryType = {
-                                    "Search",
-                                    "Playlist"
-                                };
-
-        string[] categoryName = {
-                                    "Trailers",
-                                    "Music",
-                                    "Java",
-                                    "iPhone 6",
-                                    "Google I/O"
-                                };
-
-        string[] queryName = {
-                                 "Movie Trailers 2014",
-                                 "Music 2014",
-                                 "PLDAA5DE54FB5215EC", //Playlist ID
-                                 "iphone 6",
-                                 "PLOU2XLYxmsIJQe6T9CKafiDm7p_LCCx6F" //Playlist ID
-                             };
-
-
-        #endregion
+        string[] categoryType, categoryName, queryName;
 
         public MainPage()
         {
@@ -70,6 +47,7 @@ namespace AppStudio
             }
             catch(KeyNotFoundException ex)
             {
+                settings.Add("toastNotifications", true);
                 StartPeriodicAgent();
             }
 
@@ -100,15 +78,28 @@ namespace AppStudio
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
         {
             //Do your work here
-            interstitialAd.ShowAd();
+            try
+            {
+                interstitialAd.ShowAd();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+                var result = MessageBox.Show("Come back soon!", "Are you sure?", MessageBoxButton.OKCancel);
+                e.Cancel = result != MessageBoxResult.OK;
+            }
+            
             base.OnBackKeyPress(e);
         }
 
-
-
-
+        #region Data for the MainPage
         void SaveSettings()
         {
+            MainPageData data = new MainPageData();
+            categoryType = data.categoryType;
+            categoryName = data.categoryName;
+            queryName = data.queryName;
+
             string[] finalQuery = {
                                       categoryType[0] + queryName[0],
                                       categoryType[0] + queryName[1],
@@ -139,6 +130,7 @@ namespace AppStudio
             Item4.Header = categoryName[3];
             Item5.Header = categoryName[4];
         }
+        #endregion
 
         public MainViewModels MainViewModels { get; private set; }
 

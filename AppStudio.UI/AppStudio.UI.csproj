@@ -145,6 +145,7 @@
     <Compile Include="Converters\TextPlainConverter.cs" />
     <Compile Include="Converters\ThumbnailConverter.cs" />
     <Compile Include="Resources\LocalizedStrings.cs" />
+    <Compile Include="Resources\MainPageData.cs" />
     <Compile Include="Services\LockScreenServices.cs" />
     <Compile Include="Services\NavigationServices.cs" />
     <Compile Include="Services\NokiaMapsServices.cs" />

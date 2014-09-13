@@ -23,7 +23,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <GoogleAds:AdView 
+        <GoogleAds:AdView
+            Name="searchAdUnit"
                 AdUnitID="ca-app-pub-3230884902788293/3764669994"
                 Format="Banner"
                 VerticalAlignment="Bottom" />

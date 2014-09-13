@@ -20,6 +20,13 @@ namespace AppStudio.Views
         {
             InitializeComponent();
             Loaded += SearchPage_Loaded;
+
+            searchAdUnit.FailedToReceiveAd += searchAdUnit_FailedToReceiveAd;
+        }
+
+        void searchAdUnit_FailedToReceiveAd(object sender, GoogleAds.AdErrorEventArgs e)
+        {
+            searchAdUnit.Visibility = Visibility.Collapsed;
         }
 
         void SearchPage_Loaded(object sender, RoutedEventArgs e)

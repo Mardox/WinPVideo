@@ -76,15 +76,21 @@ namespace AppStudio
         {
             if (PhoneApplicationService.Current.State.ContainsKey("videoObject"))
             {
-                NavigationService.GoBack();
+                try
+                {
+                    interstitialAd.ShowAd();
+                }
+                catch (Exception ex)
+                {
+                    NavigationService.GoBack();
+                }
+                
             }
             else
             {
                 NavigationServices.NavigateToPage("MainPage");
+                interstitialAd.ShowAd();
             }
-            
-            
-            interstitialAd.ShowAd();
             base.OnBackKeyPress(e);
         }
     }
