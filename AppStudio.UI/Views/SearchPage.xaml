@@ -23,11 +23,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <GoogleAds:AdView
-            Name="searchAdUnit"
-                AdUnitID="{Binding Path=LocalizedResources.AdMobBanner, Source={StaticResource LocalizedStrings}}"
-                Format="Banner"
-                VerticalAlignment="Bottom" />
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="1" Margin="12,17,0,28">
             <Grid Width="Auto">

@@ -31,6 +31,7 @@ namespace AppStudio
             InitializeComponent();
             MainViewModels = new MainViewModels();
 
+
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             try
             {
@@ -49,6 +50,8 @@ namespace AppStudio
                 StartPeriodicAgent();
             }
 
+            LoadBannerAd();
+
             interstitialAd = new InterstitialAd(AppResources.AdMobInterstitial);
             AdRequest adRequest = new AdRequest();
 
@@ -57,6 +60,21 @@ namespace AppStudio
             interstitialAd.LoadAd(adRequest);
 
             
+        }
+
+        private void LoadBannerAd()
+        {
+            AdView bannerAd = new AdView
+            {
+                Format = AdFormats.Banner,
+                AdUnitID = AppResources.AdMobBanner,
+            };
+            AdRequest adRequest = new AdRequest();
+            // Assumes we've defined a Grid that has a name
+            // directive of ContentPanel.
+            LayoutRoot.Children.Add(bannerAd);
+            bannerAd.VerticalAlignment = VerticalAlignment.Bottom;
+            bannerAd.LoadAd(adRequest);
         }
 
 

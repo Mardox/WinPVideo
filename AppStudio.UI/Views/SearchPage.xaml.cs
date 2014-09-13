@@ -11,22 +11,40 @@ using System.IO.IsolatedStorage;
 using Microsoft.Phone.Net.NetworkInformation;
 using System.Diagnostics;
 using AppStudio.Resources;
+using GoogleAds;
 
 namespace AppStudio.Views
 {
     public partial class SearchPage : PhoneApplicationPage
     {
         public MainViewModels MainViewModels { get; private set; }
+        AdView bannerAd;
         public SearchPage()
         {
             InitializeComponent();
             Loaded += SearchPage_Loaded;
-            searchAdUnit.FailedToReceiveAd += searchAdUnit_FailedToReceiveAd;
+            LoadBannerAd();
+            bannerAd.FailedToReceiveAd += searchAdUnit_FailedToReceiveAd;
+        }
+
+        private void LoadBannerAd()
+        {
+            bannerAd = new AdView
+            {
+                Format = AdFormats.Banner,
+                AdUnitID = AppResources.AdMobBanner,
+            };
+            AdRequest adRequest = new AdRequest();
+            // Assumes we've defined a Grid that has a name
+            // directive of ContentPanel.
+            LayoutRoot.Children.Add(bannerAd);
+            bannerAd.VerticalAlignment = VerticalAlignment.Top;
+            bannerAd.LoadAd(adRequest);
         }
 
         void searchAdUnit_FailedToReceiveAd(object sender, GoogleAds.AdErrorEventArgs e)
         {
-            searchAdUnit.Visibility = Visibility.Collapsed;
+            bannerAd.Visibility = Visibility.Collapsed;
         }
 
         void SearchPage_Loaded(object sender, RoutedEventArgs e)
@@ -61,7 +79,7 @@ namespace AppStudio.Views
             }
             else
             {
-                searchAdUnit.Visibility = Visibility.Collapsed;
+                bannerAd.Visibility = Visibility.Collapsed;
                 MessageBox.Show("Check Network connection", "Sorry", MessageBoxButton.OK);
             }
             
@@ -79,7 +97,7 @@ namespace AppStudio.Views
             }
             else
             {
-                searchAdUnit.Visibility = Visibility.Collapsed;
+                bannerAd.Visibility = Visibility.Collapsed;
             }
         }
     }

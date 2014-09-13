@@ -51,10 +51,6 @@
             <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
         </phone:Panorama>
-        <GoogleAds:AdView 
-            AdUnitID="{Binding Path=LocalizedResources.AdMobBanner, Source={StaticResource LocalizedStrings}}"
-            Format="Banner"
-            VerticalAlignment="Bottom" />
 
       <ProgressBar Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
                    Visibility="{Binding ElementName=Container, Path=SelectedItem.Content.ProgressBarVisibility}" />
