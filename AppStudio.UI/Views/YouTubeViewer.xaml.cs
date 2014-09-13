@@ -10,17 +10,42 @@ using System.Collections.Generic;
 using AppStudio.Data;
 using System.IO.IsolatedStorage;
 using AppStudio.Services;
+using GoogleAds;
 
 namespace AppStudio
 {
     public partial class YouTubeViewer : PhoneApplicationPage
     {
+        private InterstitialAd interstitialAd;
         public YouTubeViewer()
         {
             InitializeComponent();
             YouTubeModel = new YTViewerViewModel();
             DataContext = YouTubeModel;
+
+
+            interstitialAd = new InterstitialAd("ca-app-pub-3230884902788293/6718136398");
+            AdRequest adRequest = new AdRequest();
+
+            interstitialAd.ReceivedAd += OnAdReceived;
+            interstitialAd.DismissingOverlay += OnAdDismissed;
+            interstitialAd.LoadAd(adRequest);
+
         }
+
+
+        private void OnAdReceived(object sender, AdEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Ad received successfully");
+
+        }
+
+        private void OnAdDismissed(object sender, AdEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+
 
         public YTViewerViewModel YouTubeModel { get; set; }
 
@@ -57,6 +82,9 @@ namespace AppStudio
             {
                 NavigationServices.NavigateToPage("MainPage");
             }
+            
+            
+            interstitialAd.ShowAd();
             base.OnBackKeyPress(e);
         }
     }

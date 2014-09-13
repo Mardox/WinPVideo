@@ -1,0 +1,13 @@
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\AppStudio.Data.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\SharpGIS.GZipWebClient.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\WPAppStudio.Shared2.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\HtmlAgilityPack-PCL.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\AppStudio.Data.pdb
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Debug\HtmlAgilityPack-PCL.xml
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.csprojResolveAssemblyReference.cache
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

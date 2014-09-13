@@ -11,6 +11,7 @@ using AppStudio.Services;
 using Microsoft.Phone.Scheduler;
 using System.IO.IsolatedStorage;
 using System.Collections.Generic;
+using GoogleAds;
 
 namespace AppStudio
 {
@@ -22,6 +23,8 @@ namespace AppStudio
         ResourceIntensiveTask resourceIntensiveTask;
         string resourceIntensiveTaskName = "ResourceIntensiveAgent";
         public bool agentsAreEnabled = true;
+
+        private InterstitialAd interstitialAd;
 
         #region Data for the MainPage
         string[] categoryType = {
@@ -70,8 +73,39 @@ namespace AppStudio
                 StartPeriodicAgent();
             }
 
+
+            interstitialAd = new InterstitialAd("ca-app-pub-3230884902788293/5241403198");
+            AdRequest adRequest = new AdRequest();
+
+            interstitialAd.ReceivedAd += OnAdReceived;
+            interstitialAd.DismissingOverlay += OnAdDismissed;
+            interstitialAd.LoadAd(adRequest);
+
             
         }
+
+
+
+        private void OnAdReceived(object sender, AdEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Ad received successfully");
+
+        }
+
+        private void OnAdDismissed(object sender, AdEventArgs e)
+        {
+            Application.Current.Terminate();
+        }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+            //Do your work here
+            interstitialAd.ShowAd();
+            base.OnBackKeyPress(e);
+        }
+
+
+
 
         void SaveSettings()
         {

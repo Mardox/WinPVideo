@@ -10,6 +10,7 @@
     xmlns:appBar="clr-namespace:Cimbalino.Phone.Toolkit.Behaviors;assembly=Cimbalino.Phone.Toolkit"
     xmlns:interactive="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
     Foreground="{StaticResource AppForegroundColor}"
+    xmlns:GoogleAds="clr-namespace:GoogleAds;assembly=GoogleAds"
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="False"
     mc:Ignorable="d">
@@ -36,7 +37,13 @@
     </toolkit:TransitionService.NavigationOutTransition>
 
     <Grid x:Name="LayoutRoot" Background="{StaticResource AppBackgroundColor}">
-      <phone:Panorama Name="Container" Grid.Row="0" ItemsSource="{Binding}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <phone:Panorama Name="Container" Grid.Row="0" ItemsSource="{Binding}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
                       Background="{StaticResource AppBackground}" TitleTemplate="{StaticResource AppPanoramaTitle}">
             <phone:PanoramaItem Name="Item1" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item1Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item2" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item2Model}" ContentTemplate="{StaticResource ItemContent}"/>
@@ -44,6 +51,10 @@
             <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
         </phone:Panorama>
+        <GoogleAds:AdView 
+            AdUnitID="ca-app-pub-3230884902788293/3764669994"
+            Format="Banner"
+            VerticalAlignment="Bottom" />
 
       <ProgressBar Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
                    Visibility="{Binding ElementName=Container, Path=SelectedItem.Content.ProgressBarVisibility}" />

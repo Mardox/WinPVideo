@@ -255,6 +255,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="GoogleAds">
+      <HintPath>..\..\..\..\GoogleMobileAdsSdkWindowsPhone8-6.5.13\lib\windowsphone8\GoogleAds.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Syndication">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Syndication.dll</HintPath>
+    </Reference>
     <Reference Include="WPAppStudio.Shared2.dll">
       <HintPath>..\Lib\WPAppStudio.Shared2.dll</HintPath>
     </Reference>

@@ -4,6 +4,7 @@
     <AssemblyPart x:Name="AppStudio.Data" Source="AppStudio.Data.dll" />
     <AssemblyPart x:Name="Cimbalino.Phone.Toolkit.Background" Source="Cimbalino.Phone.Toolkit.Background.dll" />
     <AssemblyPart x:Name="Cimbalino.Phone.Toolkit" Source="Cimbalino.Phone.Toolkit.dll" />
+    <AssemblyPart x:Name="GoogleAds" Source="GoogleAds.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile.UI" Source="Microsoft.Advertising.Mobile.UI.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
@@ -13,6 +14,7 @@
     <AssemblyPart x:Name="Nokia.Music.Wp8" Source="Nokia.Music.Wp8.dll" />
     <AssemblyPart x:Name="ScheduledTaskAgent1" Source="ScheduledTaskAgent1.dll" />
     <AssemblyPart x:Name="SharpGIS.GZipWebClient" Source="SharpGIS.GZipWebClient.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Syndication" Source="System.ServiceModel.Syndication.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
     <AssemblyPart x:Name="WPAppStudio.Shared2" Source="WPAppStudio.Shared2.dll" />
     <AssemblyPart x:Name="HtmlAgilityPack-PCL" Source="HtmlAgilityPack-PCL.dll" />
