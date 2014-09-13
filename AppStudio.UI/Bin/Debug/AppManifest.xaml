@@ -4,6 +4,10 @@
     <AssemblyPart x:Name="AppStudio.Data" Source="AppStudio.Data.dll" />
     <AssemblyPart x:Name="Cimbalino.Phone.Toolkit.Background" Source="Cimbalino.Phone.Toolkit.Background.dll" />
     <AssemblyPart x:Name="Cimbalino.Phone.Toolkit" Source="Cimbalino.Phone.Toolkit.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Audio" Source="Coding4Fun.Toolkit.Audio.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Controls" Source="Coding4Fun.Toolkit.Controls.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Net" Source="Coding4Fun.Toolkit.Net.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Storage" Source="Coding4Fun.Toolkit.Storage.dll" />
     <AssemblyPart x:Name="GoogleAds" Source="GoogleAds.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
     <AssemblyPart x:Name="Microsoft.Advertising.Mobile.UI" Source="Microsoft.Advertising.Mobile.UI.dll" />

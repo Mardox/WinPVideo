@@ -392,3 +392,8 @@ C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\AppStudio.UI\
 C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\zh-Hans\System.ServiceModel.Syndication.resources.dll
 C:\Users\HooMan\Desktop\Windows Apps\VideoApp\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\zh-Hant\System.ServiceModel.Syndication.resources.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\GoogleAds.xml
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio.dll.config
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Audio.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Net.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Storage.dll

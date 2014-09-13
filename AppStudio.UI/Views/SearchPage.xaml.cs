@@ -44,27 +44,43 @@ namespace AppStudio.Views
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
-            // SearchInput is a TextBox defined in XAML.
-            if (!settings.Contains("searchData"))
+            if (NetworkInterface.GetIsNetworkAvailable())
             {
-                settings.Add("searchData", SearchInput.Text);
+                IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+                // SearchInput is a TextBox defined in XAML.
+                if (!settings.Contains("searchData"))
+                {
+                    settings.Add("searchData", SearchInput.Text);
+                }
+                else
+                {
+                    settings["searchData"] = SearchInput.Text;
+                }
+                settings.Save();
+                callLoadData();
             }
             else
             {
-                settings["searchData"] = SearchInput.Text;
+                searchAdUnit.Visibility = Visibility.Collapsed;
+                MessageBox.Show("Check Network connection", "Sorry", MessageBoxButton.OK);
             }
-            settings.Save();
-            callLoadData();
+            
         }
 
         private async void callLoadData()
         {
-            MainViewModels = new MainViewModels();
-            MainViewModels.SetViewType(ViewTypes.List);
-            DataContext = MainViewModels;
-            MainViewModels.UpdateAppBar();
-            await MainViewModels.LoadSearchData(NetworkInterface.GetIsNetworkAvailable());
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                MainViewModels = new MainViewModels();
+                MainViewModels.SetViewType(ViewTypes.List);
+                DataContext = MainViewModels;
+                MainViewModels.UpdateAppBar();
+                await MainViewModels.LoadSearchData(NetworkInterface.GetIsNetworkAvailable());
+            }
+            else
+            {
+                searchAdUnit.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

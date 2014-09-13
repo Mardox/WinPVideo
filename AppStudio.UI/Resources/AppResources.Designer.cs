@@ -97,7 +97,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to App version:.
+        ///   Looks up a localized string similar to 1.0.
         /// </summary>
         public static string AppVersion {
             get {
@@ -120,6 +120,15 @@ namespace AppStudio.Resources {
         public static string DevelopedBy {
             get {
                 return ResourceManager.GetString("DevelopedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to kalyandechiraju@outlook.com.
+        /// </summary>
+        public static string EmailAddress {
+            get {
+                return ResourceManager.GetString("EmailAddress", resourceCulture);
             }
         }
         
@@ -318,6 +327,15 @@ namespace AppStudio.Resources {
         public static string TapSendMessage {
             get {
                 return ResourceManager.GetString("TapSendMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @kalyandechiraju.
+        /// </summary>
+        public static string TwitterHandle {
+            get {
+                return ResourceManager.GetString("TwitterHandle", resourceCulture);
             }
         }
     }

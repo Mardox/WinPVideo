@@ -9,12 +9,12 @@ namespace AppStudio.Resources
     public class MainPageData
     {
         public MainPageData() { }
-        public string[] categoryType = {
+        string[] categoryType = {
                                     "Search",
                                     "Playlist"
                                 };
 
-        public string[] categoryName = {
+        string[] categoryName = {
                                     "Trailers",
                                     "Music",
                                     "Java",
@@ -22,12 +22,27 @@ namespace AppStudio.Resources
                                     "Google I/O"
                                 };
 
-        public string[] queryName = {
+        string[] queryName = {
                                  "Movie Trailers 2014",
                                  "Music 2014",
                                  "PLDAA5DE54FB5215EC", //Playlist ID
                                  "iphone 6",
                                  "PLOU2XLYxmsIJQe6T9CKafiDm7p_LCCx6F" //Playlist ID
                              };
+        public string[] returnCategoryName()
+        {
+            return categoryName;
+        }
+        public string[] returnFinalQuery()
+        {
+            string[] finalQuery = {
+                                      categoryType[0] + queryName[0],
+                                      categoryType[0] + queryName[1],
+                                      categoryType[1] + queryName[2],
+                                      categoryType[0] + queryName[3],
+                                      categoryType[1] + queryName[4],
+                                  };
+            return finalQuery;
+        }
     }
 }

@@ -57,7 +57,7 @@ namespace AppStudio.Data
                 }
                 catch (Exception ex)
                 {
-                    AppLogs.WriteError("MusicDataSourceDataSource.LoadData", ex.ToString());
+                    AppLogs.WriteError("Item2DataSource.LoadData", ex.ToString());
                 }
             }
             return _data;

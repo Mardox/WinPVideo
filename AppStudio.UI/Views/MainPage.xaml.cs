@@ -26,7 +26,6 @@ namespace AppStudio
         string resourceIntensiveTaskName = "ResourceIntensiveAgent";
         public bool agentsAreEnabled = true;
         private InterstitialAd interstitialAd;
-        string[] categoryType, categoryName, queryName;
 
         public MainPage()
         {
@@ -96,17 +95,8 @@ namespace AppStudio
         void SaveSettings()
         {
             MainPageData data = new MainPageData();
-            categoryType = data.categoryType;
-            categoryName = data.categoryName;
-            queryName = data.queryName;
-
-            string[] finalQuery = {
-                                      categoryType[0] + queryName[0],
-                                      categoryType[0] + queryName[1],
-                                      categoryType[1] + queryName[2],
-                                      categoryType[0] + queryName[3],
-                                      categoryType[1] + queryName[4],
-                                  };
+            string[] finalQuery = data.returnFinalQuery();
+            string[] categoryName = data.returnCategoryName();
 
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             // SearchInput is a TextBox defined in XAML.

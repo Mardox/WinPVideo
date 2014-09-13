@@ -57,7 +57,7 @@ namespace AppStudio.Data
                 }
                 catch (Exception ex)
                 {
-                    AppLogs.WriteError("TrailersDataSourceDataSource.LoadData", ex.ToString());
+                    AppLogs.WriteError("Item1DataSource.LoadData", ex.ToString());
                 }
             }
             return _data;

@@ -192,7 +192,7 @@
     <value>privacy</value>
   </data>
   <data name="AppVersion" xml:space="preserve">
-    <value>App version:</value>
+    <value>1.0</value>
   </data>
   <data name="DevelopedBy" xml:space="preserve">
     <value>Developed by:</value>
@@ -205,5 +205,11 @@
   </data>
   <data name="Search" xml:space="preserve">
     <value>search</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>kalyandechiraju@outlook.com</value>
+  </data>
+  <data name="TwitterHandle" xml:space="preserve">
+    <value>@kalyandechiraju</value>
   </data>
 </root>

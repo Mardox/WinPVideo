@@ -3,6 +3,8 @@ using System.Windows.Input;
 
 using AppStudio.Data;
 using AppStudio.Services;
+using AppStudio.Resources;
+using Coding4Fun.Toolkit.Controls;
 
 namespace AppStudio
 {
@@ -143,7 +145,9 @@ namespace AppStudio
             {
                 return new DelegateCommand(() =>
                 {
-                    NavigationServices.NavigateToPage("AboutThisAppPage");
+                    AboutPrompt about = new AboutPrompt();
+                    about.Show(AppResources.DevelopedBy, AppResources.TwitterHandle, AppResources.EmailAddress, AppResources.HomeUrl);
+                    //NavigationServices.NavigateToPage("AboutThisAppPage");
                 });
             }
         }

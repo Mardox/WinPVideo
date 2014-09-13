@@ -134,7 +134,7 @@
         <RowDefinition x:Name="WebBrowserRow" Height="400"/>
         <RowDefinition x:Name="BottomMargin" Height=".50*"/>
       </Grid.RowDefinitions>
-      <mytoolkit:FixedHtmlTextBlock Grid.Row="0" Margin="15" Html="{Binding SelectedItem.Title, Converter={StaticResource TextPlainConverter}, ConverterParameter = 140}" FontSize="32" Foreground="{StaticResource AppForegroundColor}"/>
+      <mytoolkit:FixedHtmlTextBlock Grid.Row="0" Margin="15" Html="{Binding SelectedItem.Title, Converter={StaticResource TextPlainConverter}, ConverterParameter = 140}" FontSize="26" Foreground="{StaticResource AppForegroundColor}"/>
       <phone:WebBrowser x:Name="WebBrowser" Grid.Row="1" IsScriptEnabled="true"
                         common:WebBrowserHelper.Html="{Binding SelectedItem.EmbedHtmlFragment}"
                         Visibility="{Binding NetworkAvailable, Converter={StaticResource BoolToVisibilityConverter}}"/>

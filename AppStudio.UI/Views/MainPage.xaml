@@ -96,6 +96,8 @@
                                          IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsShareItemVisible}" />
                     <appBar:ApplicationBarMenuItem Text="settings"
                                              Command="{Binding SettingsCommand}"/>
+                    <appBar:ApplicationBarMenuItem Text="about"
+                                             Command="{Binding AboutCommand}"/>
 
 
                 </appBar:ApplicationBarBehavior.MenuItems>
