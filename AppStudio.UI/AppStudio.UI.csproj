@@ -128,6 +128,7 @@
     <Content Include="Assets\Tiles\LargeBackgroundImage.png" />
     <Content Include="Assets\Tiles\LargeBackBackgroundImage.png" />
     <Content Include="Assets\ApplicationLogo.png" />
+    <Content Include="icon.png" />
     <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
     <Content Include="SplashScreenImage.png" />
   </ItemGroup>

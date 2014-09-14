@@ -126,7 +126,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>MY APPLICATION</value>
+    <value>Wordpress Development</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -215,7 +215,10 @@
   <data name="AdMobBanner" xml:space="preserve">
     <value>ca-app-pub-3230884902788293/3764669994</value>
   </data>
-  <data name="AdMobInterstitial" xml:space="preserve">
-    <value>ca-app-pub-3230884902788293/5241403198</value>
+  <data name="AdMobHomeInterstitial" xml:space="preserve">
+    <value>ca-app-pub-7607380003153721/2345945493</value>
+  </data>
+  <data name="AdMobDetailInterstitial" xml:space="preserve">
+    <value>ca-app-pub-7607380003153721/3822678694</value>
   </data>
 </root>

@@ -15,19 +15,19 @@ namespace AppStudio.Resources
                                 };
 
         string[] categoryName = {
-                                    "Trailers",
-                                    "Music",
-                                    "Java",
-                                    "iPhone 6",
-                                    "Google I/O"
+                                    "Basics",
+                                    "Customize",
+                                    "How to",
+                                    "WP & Bootstrap",
+                                    "More"
                                 };
 
         string[] queryName = {
-                                 "Movie Trailers 2014",
-                                 "Music 2014",
-                                 "PLDAA5DE54FB5215EC", //Playlist ID
-                                 "iphone 6",
-                                 "PLOU2XLYxmsIJQe6T9CKafiDm7p_LCCx6F" //Playlist ID
+                                 "PLC5E59DD6D84D34DC",
+                                 "PLLnpHn493BHGACfv4rC29kJamYMtw34D9",
+                                 "PLCAC66DEEFFEDD36E",
+                                 "PLwn9oKDowiP9Yz_80QdJ5hjwU--V9hSD7",
+                                 "wordpress development" //Playlist ID
                              };
 
         public string[] returnCategoryName()
@@ -36,13 +36,18 @@ namespace AppStudio.Resources
         }
         public string[] returnFinalQuery()
         {
-            string[] finalQuery = {
-                                      categoryType[0] + queryName[0],
-                                      categoryType[0] + queryName[1],
-                                      categoryType[1] + queryName[2],
-                                      categoryType[0] + queryName[3],
-                                      categoryType[1] + queryName[4],
-                                  };
+            string[] finalQuery = new string[queryName.Length];
+            for (int i = 0; i < queryName.Length; i++)
+            {
+                if (queryName[i].StartsWith("PL"))
+                {
+                    finalQuery[i] = categoryType[1] + queryName[i];
+                }
+                else
+                {
+                    finalQuery[i] = categoryType[0] + queryName[i];
+                }
+            }
             return finalQuery;
         }
     }

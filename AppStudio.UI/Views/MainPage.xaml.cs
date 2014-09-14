@@ -52,7 +52,7 @@ namespace AppStudio
 
             LoadBannerAd();
 
-            interstitialAd = new InterstitialAd(AppResources.AdMobInterstitial);
+            interstitialAd = new InterstitialAd(AppResources.AdMobHomeInterstitial);
             AdRequest adRequest = new AdRequest();
 
             interstitialAd.ReceivedAd += OnAdReceived;

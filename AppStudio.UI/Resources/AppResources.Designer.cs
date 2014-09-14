@@ -79,11 +79,20 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/5241403198.
+        ///   Looks up a localized string similar to ca-app-pub-7607380003153721/3822678694.
         /// </summary>
-        public static string AdMobInterstitial {
+        public static string AdMobDetailInterstitial {
             get {
-                return ResourceManager.GetString("AdMobInterstitial", resourceCulture);
+                return ResourceManager.GetString("AdMobDetailInterstitial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ca-app-pub-7607380003153721/2345945493.
+        /// </summary>
+        public static string AdMobHomeInterstitial {
+            get {
+                return ResourceManager.GetString("AdMobHomeInterstitial", resourceCulture);
             }
         }
         
@@ -106,7 +115,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MY APPLICATION.
+        ///   Looks up a localized string similar to Wordpress Development.
         /// </summary>
         public static string ApplicationTitle {
             get {

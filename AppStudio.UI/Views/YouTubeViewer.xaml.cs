@@ -26,7 +26,7 @@ namespace AppStudio
             YouTubeModel = new YTViewerViewModel();
             DataContext = YouTubeModel;
 
-            interstitialAd = new InterstitialAd(AppResources.AdMobInterstitial);
+            interstitialAd = new InterstitialAd(AppResources.AdMobDetailInterstitial);
             AdRequest adRequest = new AdRequest();
 
             interstitialAd.ReceivedAd += OnAdReceived;
