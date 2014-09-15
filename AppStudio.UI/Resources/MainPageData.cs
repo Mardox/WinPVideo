@@ -23,11 +23,11 @@ namespace AppStudio.Resources
                                 };
 
         string[] queryName = {
-                                 "PL87B0851B6537464D",
-                                 "PL712C29D05BCFE5A7",
-                                 "PL9DF58D4C63A0023D",
-                                 "PLFF89409CA9620F04",
-                                 "PLEygmGMQ9jZLLYkeb5IxTRryW1FZIRv6T"
+                                 "PL22F92B5DD8708BBC",
+                                 "PL9F416CC8226CBE5F",
+                                 "PL4FB7100893AB1740",
+                                 "PLD210F16A526F3290",
+                                 "PL20D110E235D198ED"
                              };
 
         public string[] returnCategoryName()
