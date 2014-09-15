@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{43baf4dc-8105-443c-8e26-8328f5f9fd4c}" Title="Tamil Songs Collection" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of all Tamil Songs for you." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
+  <App xmlns="" ProductID="{adccd81e-ecac-4d53-a4a4-b8a60826d6b5}" Title="Electronics Collection" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of Electronics videos for you." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
     <IconPath IsRelative="true" IsResource="false">icon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -29,10 +29,10 @@
           <Count>
           </Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/BackgroundImage.png</BackgroundImageURI>
-          <Title>Tamil Songs Collection</Title>
-          <BackContent>All your favorite Tamil Songs Collection</BackContent>
+          <Title>Electronics Collection</Title>
+          <BackContent>All your favorite Electronics Collection</BackContent>
           <BackBackgroundImageURI>Assets/Tiles/BackBackgroundImage.png</BackBackgroundImageURI>
-          <BackTitle>Tamil Songs Collection</BackTitle>
+          <BackTitle>Electronics Collection</BackTitle>
           <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/LargeBackgroundImage.png</LargeBackgroundImageURI>
           <LargeBackContent>
           </LargeBackContent>

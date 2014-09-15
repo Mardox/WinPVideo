@@ -15,19 +15,19 @@ namespace AppStudio.Resources
                                 };
 
         string[] categoryName = {
-                                    "New",
-                                    "Old",
-                                    "Pop",
-                                    "Top",
+                                    "Cool Stuff",
+                                    "Projects",
+                                    "Lectures",
+                                    "Tutorials",
                                     "More"
                                 };
 
         string[] queryName = {
-                                 "PLvyP6vkINv2c3Ys4cveQdZYlOIb8VJiTa",
-                                 "PL34FC12DA2F3D00D8",
-                                 "PL74F8B1C82A4614B9",
-                                 "PL304B8FDD0E191EC2",
-                                 "PLA4FCA936861CF01A"
+                                 "PL1F8EF58643170AA6",
+                                 "PLFE341BEC13576CB6",
+                                 "PL550E6E2E14B96822",
+                                 "PL9tn9rGywKUVvN_cOyh4TBH9L1yvjp16t",
+                                 "PLGjRnIE6hf46IrASMqBYnWVnFL1TwjaRT"
                              };
 
         public string[] returnCategoryName()
