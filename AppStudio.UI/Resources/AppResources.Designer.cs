@@ -70,7 +70,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/3764669994.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/4829273995.
         /// </summary>
         public static string AdMobBanner {
             get {
@@ -79,7 +79,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-7607380003153721/3822678694.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/1736206797.
         /// </summary>
         public static string AdMobDetailInterstitial {
             get {
@@ -88,7 +88,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-7607380003153721/2345945493.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/3212939993.
         /// </summary>
         public static string AdMobHomeInterstitial {
             get {
@@ -115,7 +115,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wordpress Development.
+        ///   Looks up a localized string similar to Mechanical Engineering.
         /// </summary>
         public static string ApplicationTitle {
             get {
@@ -196,7 +196,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Microsoft.
+        ///   Looks up a localized string similar to Mechanical Engineering.
         /// </summary>
         public static string MarketPlaceName {
             get {

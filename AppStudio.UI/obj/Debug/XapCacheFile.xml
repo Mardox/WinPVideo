@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/15/2014 7:45:40 PM">
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/15/2014 7:45:38 PM" />
+﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/15/2014 9:57:25 PM">
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/15/2014 9:57:23 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\feature.search.png" archivePath="Assets\Icons\Dark\feature.search.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\GoToSource.png" archivePath="Assets\Icons\Dark\GoToSource.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\LockScreen.png" archivePath="Assets\Icons\Dark\LockScreen.png" lastWriteTime="9/13/2014 8:45:30 AM" />
@@ -17,13 +17,13 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\NoImage.png" archivePath="Assets\NoImage.png" lastWriteTime="9/13/2014 8:45:30 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\LockScreenImage.png" archivePath="Assets\LockScreenImage.png" lastWriteTime="9/13/2014 8:45:30 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="9/14/2014 8:39:22 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\SmallIcon.png" archivePath="Assets\Tiles\SmallIcon.png" lastWriteTime="9/14/2014 8:39:22 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets\Tiles\BackgroundImage.png" lastWriteTime="9/14/2014 8:39:22 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/1/2013 2:13:18 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\SmallIcon.png" archivePath="Assets\Tiles\SmallIcon.png" lastWriteTime="11/1/2013 2:13:18 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets\Tiles\BackgroundImage.png" lastWriteTime="11/1/2013 2:13:18 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackBackgroundImage.png" archivePath="Assets\Tiles\BackBackgroundImage.png" lastWriteTime="9/13/2014 8:45:30 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="9/14/2014 8:39:22 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="11/1/2013 2:13:18 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackBackgroundImage.png" archivePath="Assets\Tiles\LargeBackBackgroundImage.png" lastWriteTime="9/13/2014 8:45:30 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationLogo.png" archivePath="Assets\ApplicationLogo.png" lastWriteTime="9/14/2014 8:39:22 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationLogo.png" archivePath="Assets\ApplicationLogo.png" lastWriteTime="11/1/2013 2:13:18 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\ReadMe.Coding4Fun.Toolkit.txt" archivePath="ReadMe.Coding4Fun.Toolkit.txt" lastWriteTime="9/13/2014 12:52:08 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\SplashScreenImage.png" archivePath="SplashScreenImage.png" lastWriteTime="9/13/2014 8:45:34 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="9/13/2014 12:52:02 PM" />
@@ -62,7 +62,7 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.xml" archivePath="Cimbalino.Phone.Toolkit.xml" lastWriteTime="9/13/2014 8:45:34 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.Background.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.Background.xml" archivePath="Cimbalino.Phone.Toolkit.Background.xml" lastWriteTime="9/13/2014 8:45:34 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\HtmlAgilityPack-PCL.xml" archivePath="HtmlAgilityPack-PCL.xml" lastWriteTime="9/13/2014 8:45:34 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\icon.png" archivePath="icon.png" lastWriteTime="9/14/2014 9:13:41 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/15/2014 7:44:40 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets/Tiles/BackgroundImage.png" lastWriteTime="9/14/2014 8:39:22 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\icon.png" archivePath="icon.png" lastWriteTime="11/1/2013 2:13:18 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/15/2014 9:54:08 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets/Tiles/BackgroundImage.png" lastWriteTime="11/1/2013 2:13:18 AM" />
 </xapCache>

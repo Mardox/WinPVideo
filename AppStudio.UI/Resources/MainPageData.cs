@@ -15,19 +15,19 @@ namespace AppStudio.Resources
                                 };
 
         string[] categoryName = {
-                                    "Basics",
-                                    "Customize",
-                                    "How to",
-                                    "WP & Bootstrap",
+                                    "Projects",
+                                    "Cool Stuff",
+                                    "Lectures",
+                                    "Jobs",
                                     "More"
                                 };
 
         string[] queryName = {
-                                 "PLC5E59DD6D84D34DC",
-                                 "PLLnpHn493BHGACfv4rC29kJamYMtw34D9",
-                                 "PLCAC66DEEFFEDD36E",
-                                 "PLwn9oKDowiP9Yz_80QdJ5hjwU--V9hSD7",
-                                 "wordpress development" //Playlist ID
+                                 "PLu47uXiGePcbq0M9tCJG9bh8CG8jJGt_P",
+                                 "PLdaXzinAA0qR4C_ATm53g3QM6v7xQUGY3",
+                                 "PL889C4F3DF29C5C08",
+                                 "PLdaXzinAA0qS13dtxvdFEYysfiXyVBdF5",
+                                 "PLu47uXiGePcYiAkPWQv6Wumuwq8tAtQx0"
                              };
 
         public string[] returnCategoryName()
