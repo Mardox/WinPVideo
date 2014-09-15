@@ -179,16 +179,16 @@ namespace AppStudio
 
         private void StartPeriodicAgent()
         {
-            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+            //IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             // Note the time when the app is opened
-            if (!settings.Contains("timeLastUsed"))
-            {
-                settings.Add("timeLastUsed", DateTime.Now.ToString());
-            }
-            else
-            {
-                settings["timeLastUsed"] = DateTime.Now.ToString();
-            }
+            //if (!settings.Contains("timeLastUsed"))
+            //{
+            //    settings.Add("timeLastUsed", DateTime.Now.ToString());
+            //}
+            //else
+            //{
+            //    settings["timeLastUsed"] = DateTime.Now.ToString();
+            //}
 
             // Variable for tracking enabled status of background agents for this app.
             agentsAreEnabled = true;
@@ -208,7 +208,7 @@ namespace AppStudio
 
             // The description is required for periodic agents. This is the string that the user
             // will see in the background services Settings page on the device.
-            periodicTask.Description = "This demonstrates a periodic task.";
+            periodicTask.Description = "Background task of " + AppResources.ApplicationTitle;
 
             // Place the call to Add in a try block in case the user has disabled agents.
             try

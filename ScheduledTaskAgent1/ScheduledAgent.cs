@@ -73,13 +73,7 @@ namespace ScheduledTaskAgent1
                               "Windows"};
 
         DateTime dt = DateTime.Now;
-        DateTime lastTimeApp, lastTimeToast;
-        TimeSpan ts = new TimeSpan(0, 0, 0);
-        TimeSpan minTs = new TimeSpan(6, 0, 0);
-        TimeSpan extTs = new TimeSpan(6, 30, 0);
-        
-        string tempSetting1 = DateTime.Now.ToString();
-        string tempSetting2 = DateTime.Now.ToString();
+        int minHour = 17, maxHour = 18;
 
         #endregion
 
@@ -95,53 +89,19 @@ namespace ScheduledTaskAgent1
             ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
 #endif
 
-            #region Readding Settings
-            if (IsolatedStorageSettings.ApplicationSettings.Contains("exdTime"))
-            {
-                string times = IsolatedStorageSettings.ApplicationSettings["exdTime"] as string;
-                extTs = TimeSpan.Parse(times);
-            }
-            if (IsolatedStorageSettings.ApplicationSettings.Contains("timeLastUsed"))
-            {
-                tempSetting1 = IsolatedStorageSettings.ApplicationSettings["timeLastUsed"] as string;
-            }
-            if (IsolatedStorageSettings.ApplicationSettings.Contains("timeLastUsed"))
-            {
-                tempSetting2 = IsolatedStorageSettings.ApplicationSettings["timeLastUsed"] as string;
-            }
-            #endregion
-
-            lastTimeApp = DateTime.Parse(tempSetting1);
-            lastTimeToast = DateTime.Parse(tempSetting2);
-            ts = dt.Subtract(lastTimeApp);
-
             #region Check for the right time to Toast
-            if (ts > minTs && ts < extTs && lastTimeApp.Day == lastTimeToast.Day)
+            if (dt.Hour >= minHour && dt.Hour < maxHour)
             {
-                if (dt.Hour < 21 && dt.Hour > 7)
+                if (dt.Minute >= 0 && dt.Minute <= 30)
                 {
                     Random r = new Random();
                     int randomTopic = r.Next(0, 10);
                     _queryString = topics[randomTopic];
-                    _url = baseUrl + _queryString + baseEndUrl;  
+                    _url = baseUrl + _queryString + baseEndUrl;
                     fetchData();
                 }
             }
-            else if (lastTimeApp.Day != lastTimeToast.Day)
-            {
-                if (dt.Hour > 16 && dt.Hour < 15)
-                {
-                    if (dt.Minute >= 0 && dt.Minute <= 30)
-                    {
-                        Random r = new Random();
-                        int randomTopic = r.Next(0, 10);
-                        _queryString = topics[randomTopic];
-                        _url = baseUrl + _queryString + baseEndUrl;
-                        fetchData();
-                    } 
-                }
-            }
-            else
+            else if (dt.Hour < minHour && dt.Hour > maxHour)
             {
                 NotifyComplete();
             }
@@ -164,15 +124,6 @@ namespace ScheduledTaskAgent1
             catch (Exception ex)
             {
                 Debug.WriteLine("No network while executing backgroundAgent " + ex.ToString());
-                IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
-                if (!settings.Contains("exdTime"))
-                {
-                    settings.Add("exdTime", extTs.Add(new TimeSpan(1,0,0)).ToString());
-                }
-                else
-                {
-                    settings["exdTime"] = extTs.Add(new TimeSpan(1, 0, 0)).ToString();
-                }
             }
         }
 
@@ -218,22 +169,10 @@ namespace ScheduledTaskAgent1
             // The toast will not be shown if the foreground application is running.
             ShellToast toast = new ShellToast();
             toast.Title = videoItem.Title;
-            //toast.Content = toastMessage;
+            toast.Content = "Check out";
             toast.NavigationUri = new System.Uri("/Views/YouTubeViewer.xaml", System.UriKind.Relative);
             toast.Show();
 
-            
-            // Note the time when the app is opened
-            if (!settings.Contains("toastLastShown"))
-            {
-                settings.Add("toastLastShown", DateTime.Now.ToString());
-            }
-            else
-            {
-                settings["toastLastShown"] = DateTime.Now.ToString();
-            }
-
-            extTs = new TimeSpan(6, 30, 0);
             NotifyComplete();
         }
         #endregion
