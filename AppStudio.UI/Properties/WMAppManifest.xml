@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{85746877-00e5-45cf-be95-8bcf3f2b558c}" Title="Myanmar Songs" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of all Myanmar Songs for you." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
+  <App xmlns="" ProductID="{e19951dd-a100-4981-8047-b914929484f4}" Title="Bangla Song" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of all Bangla Song for you." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
     <IconPath IsRelative="true" IsResource="false">icon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -29,10 +29,10 @@
           <Count>
           </Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/BackgroundImage.png</BackgroundImageURI>
-          <Title>Myanmar Songs</Title>
-          <BackContent>All your favorite Myanmar Songs Collection</BackContent>
+          <Title>Bangla Song</Title>
+          <BackContent>All your favorite Bangla Song Collection</BackContent>
           <BackBackgroundImageURI>Assets/Tiles/BackBackgroundImage.png</BackBackgroundImageURI>
-          <BackTitle>Myanmar Songs</BackTitle>
+          <BackTitle>Bangla Song</BackTitle>
           <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/LargeBackgroundImage.png</LargeBackgroundImageURI>
           <LargeBackContent>
           </LargeBackContent>
