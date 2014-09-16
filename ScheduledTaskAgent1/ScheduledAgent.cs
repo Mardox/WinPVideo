@@ -61,11 +61,11 @@ namespace ScheduledTaskAgent1
         private ObservableCollection<YouTubeSchema> resultItems;
         private IEnumerable<YouTubeSchema> _data = null;
 
-        private string[] topics = { "PL2067F563C9ABC592",
-                                 "PL6208108772F8B791",
-                                 "PL5B0D01D64C817C33",
-                                 "PLddMio_eGRxe9EYZqCrJywZaBYenVu7kT",
-                                 "PLFA2E79F30697AC84"};
+        private string[] topics = { "PLl-TWbc2VGoY_xHhDwfxgHTLNHaN0nQR_",
+                                 "PLE2AE59AE2815C007",
+                                 "PLl57O3VXgEuUIqeZZmLy9qm3JnzWydbBV",
+                                 "PL43CAC95984379452",
+                                 "PL62D660EF9FCA7E84"};
 
         DateTime dt = DateTime.Now;
         int minHour = 17, maxHour = 18;
