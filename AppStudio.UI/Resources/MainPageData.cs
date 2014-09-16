@@ -17,17 +17,17 @@ namespace AppStudio.Resources
         string[] categoryName = {
                                     "New",
                                     "Old",
-                                    "Popular",
-                                    "Trailers",
+                                    "Pop",
+                                    "Top",
                                     "More"
                                 };
 
         string[] queryName = {
-                                 "PL63E3D69CC5BECAC5",
-                                 "PLE55BA6424F0A6B2C",
-                                 "PLg1rwoOvapSDkBFsCJu65YhXJCKf-Q4eB",
-                                 "Myanmar Movie Trailers",
-                                 "PL3276C1D7400A9965"
+                                 "PLC12343C91911624A",
+                                 "PLE362A3D5CC9212C4",
+                                 "PLLfLX-7UWUpJsBOeSBk9tujsKO8SjgiHL",
+                                 "PLCA07C99ED4161BC3",
+                                 "PLVvjePPaJLtc6hwTnMAAuMuA_KkUNg-gK"
                              };
 
         public string[] returnCategoryName()
