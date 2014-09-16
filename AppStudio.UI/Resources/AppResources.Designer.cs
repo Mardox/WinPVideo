@@ -115,7 +115,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bhojpuri Songs.
+        ///   Looks up a localized string similar to Bhojpuri Song.
         /// </summary>
         public static string ApplicationTitle {
             get {
@@ -196,7 +196,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bhojpuri Songs.
+        ///   Looks up a localized string similar to Bhojpuri Song.
         /// </summary>
         public static string MarketPlaceName {
             get {
