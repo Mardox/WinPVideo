@@ -54,23 +54,18 @@ namespace ScheduledTaskAgent1
         #region All required variables
         private List<YouTubeSchema> videosList = new List<YouTubeSchema>();
         YTHelper videoItem;
-        string baseUrl = "https://gdata.youtube.com/feeds/api/videos?q=";
-        string baseEndUrl = "&orderby=viewCount&start-index=1&max-results=20&safeSearch=strict&format=5&v=2";
+        string baseUrl = "https://gdata.youtube.com/feeds/api/playlists/";
+        string baseEndUrl = "?v=2";
         string _queryString = null;
         string _url = "";
         private ObservableCollection<YouTubeSchema> resultItems;
         private IEnumerable<YouTubeSchema> _data = null;
 
-        private string[] topics = { "Apple",
-                                "Microsoft",
-                              "Google",
-                              "Facebook",
-                              "Twitter",
-                              "Android",
-                              "Samsung",
-                              "Sony",
-                              "iOS",
-                              "Windows"};
+        private string[] topics = { "PL1F8EF58643170AA6",
+                                "PLFE341BEC13576CB6",
+                              "PL550E6E2E14B96822",
+                              "PL9tn9rGywKUVvN_cOyh4TBH9L1yvjp16t",
+                                  "PLGjRnIE6hf46IrASMqBYnWVnFL1TwjaRT"};
 
         DateTime dt = DateTime.Now;
         int minHour = 17, maxHour = 18;
@@ -95,7 +90,7 @@ namespace ScheduledTaskAgent1
                 if (dt.Minute >= 0 && dt.Minute <= 30)
                 {
                     Random r = new Random();
-                    int randomTopic = r.Next(0, 10);
+                    int randomTopic = r.Next(0, topics.Length);
                     _queryString = topics[randomTopic];
                     _url = baseUrl + _queryString + baseEndUrl;
                     fetchData();
@@ -117,7 +112,7 @@ namespace ScheduledTaskAgent1
                 var resultData = await LoadData();
                 resultItems = (ObservableCollection<YouTubeSchema>)resultData;
                 Random r = new Random();
-                int randomValue = r.Next(0, 20);
+                int randomValue = r.Next(0, resultItems.Count);
                 var finaldata = resultItems[randomValue];
                 helper(finaldata);
             }
@@ -147,7 +142,7 @@ namespace ScheduledTaskAgent1
         private void helper(YouTubeSchema item)
         {
             videoItem = new YTHelper { Title = item.Title, Summary = item.Summary, ExternalUrl = item.ExternalUrl, EmbedHtmlFragment = item.EmbedHtmlFragment };
-            //string toastMessage = "Check out this new video";
+            string[] toastMessage = { "Check this out!", "Today's Video of The Day", "Watch This Now!", "Here is Our Pick" };
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             // SearchInput is a TextBox defined in XAML.
 
@@ -165,11 +160,12 @@ namespace ScheduledTaskAgent1
             }
             settings.Save();
 
+            Random r = new Random();
             // Launch a toast to show that the agent is running.
             // The toast will not be shown if the foreground application is running.
             ShellToast toast = new ShellToast();
-            toast.Title = videoItem.Title;
-            toast.Content = "Check out";
+            toast.Title = toastMessage[r.Next(0, toastMessage.Length)];
+            toast.Content = videoItem.Title;
             toast.NavigationUri = new System.Uri("/Views/YouTubeViewer.xaml", System.UriKind.Relative);
             toast.Show();
 
