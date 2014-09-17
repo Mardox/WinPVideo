@@ -31,7 +31,7 @@
           <Title>Mechanical Engineering</Title>
           <BackContent>All about Mechanical Engineering</BackContent>
           <BackBackgroundImageURI>Assets/Tiles/BackBackgroundImage.png</BackBackgroundImageURI>
-          <BackTitle>Wordpress Development</BackTitle>
+          <BackTitle>Mechanical Engineering</BackTitle>
           <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/LargeBackgroundImage.png</LargeBackgroundImageURI>
           <LargeBackContent></LargeBackContent>
           <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/LargeBackBackgroundImage.png</LargeBackBackgroundImageURI>
