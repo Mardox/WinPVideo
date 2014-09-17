@@ -1,4 +1,4 @@
-﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="AppStudio" EntryPointType="AppStudio.App" RuntimeVersion="4.7.50308.0">
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="AppStudio" EntryPointType="AppStudio.App" RuntimeVersion="6.7.50308.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="AppStudio" Source="AppStudio.dll" />
     <AssemblyPart x:Name="AppStudio.Data" Source="AppStudio.Data.dll" />
@@ -9,8 +9,6 @@
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Net" Source="Coding4Fun.Toolkit.Net.dll" />
     <AssemblyPart x:Name="Coding4Fun.Toolkit.Storage" Source="Coding4Fun.Toolkit.Storage.dll" />
     <AssemblyPart x:Name="GoogleAds" Source="GoogleAds.dll" />
-    <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
-    <AssemblyPart x:Name="Microsoft.Advertising.Mobile.UI" Source="Microsoft.Advertising.Mobile.UI.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
     <AssemblyPart x:Name="MyToolkit" Source="MyToolkit.dll" />
     <AssemblyPart x:Name="MyToolkit.Extended" Source="MyToolkit.Extended.dll" />
@@ -22,6 +20,5 @@
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
     <AssemblyPart x:Name="WPAppStudio.Shared2" Source="WPAppStudio.Shared2.dll" />
     <AssemblyPart x:Name="HtmlAgilityPack-PCL" Source="HtmlAgilityPack-PCL.dll" />
-    <AssemblyPart x:Name="Microsoft.Phone.Controls.Maps" Source="Microsoft.Phone.Controls.Maps.dll" />
   </Deployment.Parts>
 </Deployment>
