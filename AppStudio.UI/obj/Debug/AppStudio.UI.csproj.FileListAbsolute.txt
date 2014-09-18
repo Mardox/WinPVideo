@@ -375,14 +375,6 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppxMan
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio.UI.build.appxrecipe
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio.UI_Debug_AnyCPU.xap
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\en-US\System.ServiceModel.Syndication.resw
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\layout.resfiles
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\layout.resfiles.intermediate
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\Resources.resfiles
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\Resources.resfiles.intermediate
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\pri.resfiles
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\pri.resfiles.intermediate
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\priconfig.xml
-C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\priconfig.xml.intermediate
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication.pri
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\System.ServiceModel.Syndication\qualifiers.txt
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\priconfig.xml
