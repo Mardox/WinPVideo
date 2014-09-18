@@ -23,11 +23,11 @@ namespace AppStudio.Resources
                                 };
 
         string[] queryName = {
-                                 "PL810657D45435357C",
-                                 "PL53A3566AB6A7A775",
-                                 "PLYOJ_aSiJtes8s-aqWJpQ1w10eA7ZlkZ_",
-                                 "roamnian songs in movies",
-                                 "PLHzgf6wYuq1PARIBQFBuuyFI45j4PWUre"
+                                 "PLXvVUvHFbzXa-Q4KHUKp2H2_F7gOLErur",
+                                 "PLFB7CD5D03FFB98A7",
+                                 "PLEA875158D4401ECF",
+                                 "PL21O_SWI5zjBj1VgdtzgWQPUlilE_7Su-",
+                                 "kannada full songs"
                              };
 
         public string[] returnCategoryName()
