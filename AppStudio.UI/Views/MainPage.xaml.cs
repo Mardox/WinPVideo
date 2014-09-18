@@ -24,6 +24,7 @@ namespace AppStudio
         string periodicTaskName = "PeriodicAgent";
         public bool agentsAreEnabled = true;
         private InterstitialAd interstitialAd;
+        private AdView bannerAd;
         private MainPageData data;
 
         public MainPage()
@@ -50,6 +51,11 @@ namespace AppStudio
                 StartPeriodicAgent();
             }
 
+            Loaded += MainPage_Loaded;
+        }
+
+        void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
             LoadBannerAd();
 
             interstitialAd = new InterstitialAd(AppResources.AdMobHomeInterstitial);
@@ -58,13 +64,11 @@ namespace AppStudio
             interstitialAd.ReceivedAd += OnAdReceived;
             interstitialAd.DismissingOverlay += OnAdDismissed;
             interstitialAd.LoadAd(adRequest);
-
-            
         }
 
         private void LoadBannerAd()
         {
-            AdView bannerAd = new AdView
+            bannerAd = new AdView
             {
                 Format = AdFormats.Banner,
                 AdUnitID = AppResources.AdMobBanner,
@@ -76,8 +80,6 @@ namespace AppStudio
             bannerAd.VerticalAlignment = VerticalAlignment.Bottom;
             bannerAd.LoadAd(adRequest);
         }
-
-
 
         private void OnAdReceived(object sender, AdEventArgs e)
         {
