@@ -18,16 +18,16 @@ namespace AppStudio.Resources
                                     "New",
                                     "Old",
                                     "Pop",
-                                    "Movie Song",
+                                    "Trailers",
                                     "More"
                                 };
 
         string[] queryName = {
-                                 "PL71nZj76T0iKnWUsbIWLrbfQe8uAVnTXi",
-                                 "PLB49447F3D55F8351",
-                                 "PL_yYOlpthJExkFYqxEQdn-7Y8DIJgo1Xg",
-                                 "PL2D7435BBF1BDF04E",
-                                 "PLE7D29E723733134D"
+                                 "PLIS2cJG94zfc6xv-OZdc3_WXlbJtdgGki",
+                                 "PLPciVFPE-Ba-VhnNJ6MIqlIpiWFOribHZ",
+                                 "PLBDDB31C2143AAAA1",
+                                 "PLmqDyI-k0XEgFcm3ObOy_pNqEQP-1yCGS",
+                                 "PL7EdbmN-oWpO8v0_Gb8KoE8b6EpuAy-Pf"
                              };
 
         public string[] returnCategoryName()
