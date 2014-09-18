@@ -126,7 +126,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>Nigerian Shows and Movies</value>
+    <value>Swimming Lessons</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -210,15 +210,15 @@
     <value>Check out this cool video. Shared from my windows phone using</value>
   </data>
   <data name="MarketPlaceName" xml:space="preserve">
-    <value>Nigerian Shows and Movies</value>
+    <value>Swimming Lessons</value>
   </data>
   <data name="AdMobBanner" xml:space="preserve">
-    <value>ca-app-pub-3230884902788293/2148335993</value>
+    <value>ca-app-pub-3230884902788293/7891341596</value>
   </data>
   <data name="AdMobHomeInterstitial" xml:space="preserve">
-    <value>ca-app-pub-3230884902788293/3625069195</value>
+    <value>ca-app-pub-3230884902788293/9368074794</value>
   </data>
   <data name="AdMobDetailInterstitial" xml:space="preserve">
-    <value>ca-app-pub-3230884902788293/5101802394</value>
+    <value>ca-app-pub-3230884902788293/1844807993</value>
   </data>
 </root>

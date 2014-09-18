@@ -15,19 +15,19 @@ namespace AppStudio.Resources
                                 };
 
         string[] categoryName = {
-                                    "New",
-                                    "Old",
-                                    "Pop",
-                                    "Trailers",
+                                    "Lessons",
+                                    "Tricks",
+                                    "Competitions",
+                                    "Styles",
                                     "More"
                                 };
 
         string[] queryName = {
-                                 "PLIS2cJG94zfc6xv-OZdc3_WXlbJtdgGki",
-                                 "PLPciVFPE-Ba-VhnNJ6MIqlIpiWFOribHZ",
-                                 "PLBDDB31C2143AAAA1",
-                                 "PLmqDyI-k0XEgFcm3ObOy_pNqEQP-1yCGS",
-                                 "PL7EdbmN-oWpO8v0_Gb8KoE8b6EpuAy-Pf"
+                                 "PLF7D39B1F2BFF79DF",
+                                 "PLP2iDvHJFpM_U2trkhLTJ5jkgS5qLrSzE",
+                                 "PL91FC8D5D757D135C",
+                                 "PL831747C14F06755C",
+                                 "PLuolWeYY_qL1WmdK7t1O7jYgdc7nqw-f0"
                              };
 
         public string[] returnCategoryName()
