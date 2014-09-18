@@ -70,7 +70,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/5910237597.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/6554209199.
         /// </summary>
         public static string AdMobBanner {
             get {
@@ -79,7 +79,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/7386970791.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/9507675598.
         /// </summary>
         public static string AdMobDetailInterstitial {
             get {
@@ -88,7 +88,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/8863703994.
+        ///   Looks up a localized string similar to ca-app-pub-3230884902788293/8030942397.
         /// </summary>
         public static string AdMobHomeInterstitial {
             get {
@@ -115,7 +115,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pakistani Songs Collection.
+        ///   Looks up a localized string similar to Golf Lessons Collection.
         /// </summary>
         public static string ApplicationTitle {
             get {
@@ -196,7 +196,7 @@ namespace AppStudio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pakistani Songs Collection.
+        ///   Looks up a localized string similar to Golf Lessons Collection.
         /// </summary>
         public static string MarketPlaceName {
             get {
