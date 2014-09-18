@@ -62,10 +62,11 @@ namespace ScheduledTaskAgent1
         private IEnumerable<YouTubeSchema> _data = null;
 
         private string[] topics = {
-                                        "PL3dYowBrcf5_XtgGD4PKdWTuXnIn2h27C",
-                                 "PLBB819A102F2E8D31",
-                                 "PLMsnE1dBWcFGce-C92QPYo_5Fy1zBzfw-",
-                                 "PLZ7LJejf54QVqj-fe_Lxl6HJiVtnT9z98"
+                                        "PL71nZj76T0iKnWUsbIWLrbfQe8uAVnTXi",
+                                 "PLB49447F3D55F8351",
+                                 "PL_yYOlpthJExkFYqxEQdn-7Y8DIJgo1Xg",
+                                 "PL2D7435BBF1BDF04E",
+                                 "PLE7D29E723733134D"
                                   };
 
         DateTime dt = DateTime.Now;
