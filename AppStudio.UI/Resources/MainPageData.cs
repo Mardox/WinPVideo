@@ -23,11 +23,11 @@ namespace AppStudio.Resources
                                 };
 
         string[] queryName = {
-                                 "PLXvVUvHFbzXa-Q4KHUKp2H2_F7gOLErur",
-                                 "PLFB7CD5D03FFB98A7",
-                                 "PLEA875158D4401ECF",
-                                 "PL21O_SWI5zjBj1VgdtzgWQPUlilE_7Su-",
-                                 "kannada full songs"
+                                 "PLStyg_2A0Lw4jeFObWq5oB8or0lkInIxH",
+                                 "PLfAqY_46pgUOwh4Hdr928lS-l79MWdaxJ",
+                                 "PLJjEUxMM8w8JmXadqhPHwR0CHdzAzLcjg",
+                                 "PLF7548261947BA6EC",
+                                 "PL43F311D825BF4C11"
                              };
 
         public string[] returnCategoryName()
