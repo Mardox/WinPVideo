@@ -216,6 +216,7 @@ namespace AppStudio
             if (panorama.SelectedItem == drawItem)
             {
                 progressBar.Visibility = Visibility.Collapsed;
+                appBar.IsVisible = false;
             }
             SpeechServices.Stop();
         }
