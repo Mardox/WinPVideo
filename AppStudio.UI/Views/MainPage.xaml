@@ -45,14 +45,9 @@
         
         <phone:Panorama Name="Container" Grid.Row="0" ItemsSource="{Binding}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
                       Background="{StaticResource AppBackground}" TitleTemplate="{StaticResource AppPanoramaTitle}">
-            <phone:PanoramaItem Name="Item1" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item1Model}" ContentTemplate="{StaticResource ItemContent}"/>
-            <phone:PanoramaItem Name="Item2" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item2Model}" ContentTemplate="{StaticResource ItemContent}"/>
-            <phone:PanoramaItem Name="Item3" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item3Model}" ContentTemplate="{StaticResource ItemContent}"/>
-            <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
-            <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
 
             <!--Panaroma item for draw celeb view-->
-            <phone:PanoramaItem x:Name="drawItem" Header="Draw">
+            <phone:PanoramaItem x:Name="drawItem" Header="Draw" Loaded="drawItem_Loaded">
                 <phone:PanoramaItem.RenderTransform>
                     <TranslateTransform/>
                 </phone:PanoramaItem.RenderTransform>
@@ -69,6 +64,14 @@
                     </ListBox>
                 </Grid>
             </phone:PanoramaItem>
+
+            <phone:PanoramaItem Name="Item1" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item1Model}" ContentTemplate="{StaticResource ItemContent}"/>
+            <phone:PanoramaItem Name="Item2" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item2Model}" ContentTemplate="{StaticResource ItemContent}"/>
+            <phone:PanoramaItem Name="Item3" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item3Model}" ContentTemplate="{StaticResource ItemContent}"/>
+            <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
+            <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
+
+            
         </phone:Panorama>
 
       <ProgressBar x:Name="progressBar" Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
@@ -78,7 +81,7 @@
       <interactive:Interaction.Behaviors>
         <appBar:ApplicationBarBehavior x:Name="appBar" IsVisible="{Binding IsAppBarVisible}" BackgroundColor="{StaticResource AppBarBackgroundColor}" ForegroundColor="White" Mode="Default">
 
-          <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.SpeakText, Source={StaticResource LocalizedStrings}}"
+          <!--<appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.SpeakText, Source={StaticResource LocalizedStrings}}"
                                            Command="{Binding ElementName=Container, Path=SelectedItem.Content.SpeakTextCommand}"
                                            IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsSpeakTextVisible}"
                                            IconUri="Assets/Icons/Dark/TextToSpeech.png" />
@@ -86,17 +89,17 @@
           <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.PinToStart, Source={StaticResource LocalizedStrings}}"
                                            Command="{Binding ElementName=Container, Path=SelectedItem.Content.PinToStartCommand}"
                                            IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsPinToStartVisible}"
-                                           IconUri="Assets/Icons/Dark/PinToStart.png" />
+                                           IconUri="Assets/Icons/Dark/PinToStart.png" />-->
 
           <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.Refresh, Source={StaticResource LocalizedStrings}}"
                                            Command="{Binding ElementName=Container, Path=SelectedItem.Content.RefreshCommand}"
                                            IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsRefreshVisible}"
                                            IconUri="Assets/Icons/Dark/Refresh.png" />
 
-          <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.GoToSource, Source={StaticResource LocalizedStrings}}"
+          <!--<appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.GoToSource, Source={StaticResource LocalizedStrings}}"
                                            Command="{Binding ElementName=Container, Path=SelectedItem.Content.GoToSourceCommand}"
                                            IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsGoToSourceVisible}"
-                                           IconUri="Assets/Icons/Dark/GoToSource.png" />
+                                           IconUri="Assets/Icons/Dark/GoToSource.png" />-->
 
                 <!--
           <appBar:ApplicationBarIconButton Text="{Binding LocalizedResources.LockScreen, Source={StaticResource LocalizedStrings}}"

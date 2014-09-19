@@ -30,6 +30,19 @@ namespace AppStudio.Resources
                                  "wordpress development" //Playlist ID
                              };
 
+        public string[] drawItemsList = {
+                                            "Kety Perry 1",
+                                            "Kety Perry 2",
+                                            "Kety Perry 3",
+                                            "Kety Perry 4",
+                                            "Kety Perry 5",
+                                            "Kety Perry 6",
+                                            "Kety Perry 7",
+                                            "Kety Perry 8",
+                                            "Kety Perry 9",
+                                            "Kety Perry 10",
+                                        };
+
         public string[] returnCategoryName()
         {
             return categoryName;

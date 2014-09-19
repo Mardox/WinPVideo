@@ -85,19 +85,10 @@ namespace AppStudio
         private void ReadFile()
         {
             listnameofceleb.Clear();
-            var ResrouceStream = Application.GetResourceStream(new Uri("text/celebnames.txt", UriKind.Relative));
-            if (ResrouceStream != null)
+            data = new MainPageData();
+            foreach (string item in data.drawItemsList)
             {
-                Stream myFileStream = ResrouceStream.Stream;
-                if (myFileStream.CanRead)
-                {
-                    StreamReader myStreamReader = new StreamReader(myFileStream);
-
-                    while (!myStreamReader.EndOfStream)
-                    {
-                        listnameofceleb.Add(myStreamReader.ReadLine());
-                    }
-                }
+                listnameofceleb.Add(item);
             }
         }
 
@@ -213,11 +204,11 @@ namespace AppStudio
                     MainViewModels.SelectedItem = item.Content as ViewModelBase;
                 }
             }
-            if (panorama.SelectedItem == drawItem)
-            {
-                progressBar.Visibility = Visibility.Collapsed;
-                appBar.IsVisible = false;
-            }
+            //if (panorama.SelectedItem == drawItem)
+            //{
+            //    progressBar.Visibility = Visibility.Collapsed;
+            //    appBar.IsVisible = false;
+            //}
             SpeechServices.Stop();
         }
 
@@ -299,6 +290,11 @@ namespace AppStudio
         {
             index = celebnameslist.Items.IndexOf((sender as Grid).DataContext);
             NavigationService.Navigate(new Uri("/Views/draw.xaml", UriKind.Relative));
+        }
+
+        private void drawItem_Loaded(object sender, RoutedEventArgs e)
+        {
+            progressBar.Visibility = Visibility.Collapsed;
         }
     }
 }

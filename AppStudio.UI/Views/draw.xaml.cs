@@ -16,6 +16,8 @@ using System.IO;
 using Windows.Storage;
 using System.Threading.Tasks;
 using System.Windows.Shapes;
+using GoogleAds;
+using AppStudio.Resources;
 
 namespace AppStudio.Views
 {
@@ -31,6 +33,7 @@ namespace AppStudio.Views
         public Point currentPoint, oldPoint;
         public bool isDrag = false;
         public Point oldPoints;
+
         public draw()
         {
             InitializeComponent();
@@ -45,6 +48,20 @@ namespace AppStudio.Views
             isDrag = false;
             painting.RenderTransform = new TranslateTransform();
             oldPoints = new Point(painting.Margin.Left, painting.Margin.Top);
+
+            AdView bannerAd = new AdView
+            {
+                // Replace your AD Unit ID before uploading 
+                Format = AdFormats.Banner,
+                AdUnitID = AppResources.AdMobBanner
+            };
+            bannerAd.VerticalAlignment = VerticalAlignment.Top;
+            AdRequest adRequest = new AdRequest();
+            // Assumes we've defined a Grid that has a name
+            // directive of ContentPanel.
+            Maingrid.Children.Add(bannerAd);
+            bannerAd.VerticalAlignment = VerticalAlignment.Top;
+            bannerAd.LoadAd(adRequest);
         }
 
         void painting_ManipulationCompleted(object sender, System.Windows.Input.ManipulationCompletedEventArgs e)
