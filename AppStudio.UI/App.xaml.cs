@@ -10,6 +10,8 @@ using Microsoft.Phone.Shell;
 using Microsoft.Phone.Scheduler;
 
 using AppStudio.Resources;
+using System.Collections.Generic;
+using System.IO;
 
 namespace AppStudio
 {
@@ -230,6 +232,7 @@ namespace AppStudio
         //
         // For more info on localizing Windows Phone apps see http://go.microsoft.com/fwlink/?LinkId=262072.
         //
+
         private void InitializeLanguage()
         {
             try
@@ -268,7 +271,6 @@ namespace AppStudio
                 throw;
             }
         }
-
 
         #region FAST RESUME
         // Event handler for the Navigating event of the root frame.

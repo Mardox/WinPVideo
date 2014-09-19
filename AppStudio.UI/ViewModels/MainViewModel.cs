@@ -6,6 +6,7 @@ using AppStudio.Services;
 using AppStudio.Resources;
 using System;
 using Microsoft.Phone.Tasks;
+using System.ComponentModel;
 
 namespace AppStudio
 {
@@ -210,5 +211,55 @@ namespace AppStudio
                 });
             }
         }
+
+        public class ItemViewModel : INotifyPropertyChanged
+        {
+            private string title;
+
+            public string Title
+            {
+                get
+                {
+                    return title;
+                }
+                set
+                {
+                    if (value != title)
+                    {
+                        title = value;
+                        NotifyPropertyChanged("Title");
+                    }
+                }
+            }
+
+            private string image;
+
+            public string LargeImage
+            {
+                get
+                {
+                    return image;
+                }
+                set
+                {
+                    if (value != image)
+                    {
+                        image = value;
+                        NotifyPropertyChanged("LargeImage");
+                    }
+                }
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+            private void NotifyPropertyChanged(String propertyName)
+            {
+                PropertyChangedEventHandler handler = PropertyChanged;
+                if (null != handler)
+                {
+                    handler(this, new PropertyChangedEventArgs(propertyName));
+                }
+            }
+        }
+
     }
 }

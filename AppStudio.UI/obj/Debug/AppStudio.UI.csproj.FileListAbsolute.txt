@@ -396,3 +396,6 @@ C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Net.dll
 C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Coding4Fun.Toolkit.Storage.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\GoogleAds.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\GoogleAds.xml
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\Views\draw.g.cs

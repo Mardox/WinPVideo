@@ -14,17 +14,21 @@ using System.Collections.Generic;
 using GoogleAds;
 using AppStudio.Resources;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
+using System.IO;
 
 namespace AppStudio
 {
     public partial class MainPage
     {
+        public static int index;
         //for backgroundtask
         PeriodicTask periodicTask;
         string periodicTaskName = "PeriodicAgent";
         public bool agentsAreEnabled = true;
         private InterstitialAd interstitialAd;
         private MainPageData data;
+        public MainViewModels MainViewModels { get; private set; }
 
         public MainPage()
         {
@@ -59,7 +63,42 @@ namespace AppStudio
             interstitialAd.DismissingOverlay += OnAdDismissed;
             interstitialAd.LoadAd(adRequest);
 
-            
+            //for DrawCeleb Page
+            ReadFile();
+            AllNamesLoad();
+        }
+
+        public ObservableCollection<AppStudio.MainViewModels.ItemViewModel> AllNames { get; private set; }
+        public static IList<string> listnameofceleb = new List<string>();
+
+        public void AllNamesLoad()
+        {
+            this.AllNames = new ObservableCollection<AppStudio.MainViewModels.ItemViewModel>();
+            this.AllNames.Clear();
+            for (int i = 0; i < listnameofceleb.Count; i++)
+            {
+                this.AllNames.Add(new AppStudio.MainViewModels.ItemViewModel() { Title = listnameofceleb[i], LargeImage = "/images/" + i.ToString() + "/" + i.ToString() + "0.png" });
+            }
+            celebnameslist.ItemsSource = AllNames;
+        }
+
+        private void ReadFile()
+        {
+            listnameofceleb.Clear();
+            var ResrouceStream = Application.GetResourceStream(new Uri("text/celebnames.txt", UriKind.Relative));
+            if (ResrouceStream != null)
+            {
+                Stream myFileStream = ResrouceStream.Stream;
+                if (myFileStream.CanRead)
+                {
+                    StreamReader myStreamReader = new StreamReader(myFileStream);
+
+                    while (!myStreamReader.EndOfStream)
+                    {
+                        listnameofceleb.Add(myStreamReader.ReadLine());
+                    }
+                }
+            }
         }
 
         private void LoadBannerAd()
@@ -138,7 +177,7 @@ namespace AppStudio
         }
         #endregion
 
-        public MainViewModels MainViewModels { get; private set; }
+        
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -173,6 +212,10 @@ namespace AppStudio
                 {
                     MainViewModels.SelectedItem = item.Content as ViewModelBase;
                 }
+            }
+            if (panorama.SelectedItem == drawItem)
+            {
+                progressBar.Visibility = Visibility.Collapsed;
             }
             SpeechServices.Stop();
         }
@@ -249,6 +292,12 @@ namespace AppStudio
             catch (Exception)
             {
             }
+        }
+
+        private void celebgrid_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            index = celebnameslist.Items.IndexOf((sender as Grid).DataContext);
+            NavigationService.Navigate(new Uri("/Views/draw.xaml", UriKind.Relative));
         }
     }
 }

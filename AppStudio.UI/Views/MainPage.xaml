@@ -50,9 +50,28 @@
             <phone:PanoramaItem Name="Item3" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item3Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
+
+            <!--Panaroma item for draw celeb view-->
+            <phone:PanoramaItem x:Name="drawItem" Header="Draw">
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid Name="celebgrid" Width="413" Height="620">
+                    <ListBox Name="celebnameslist" HorizontalAlignment="Left" Width="413" Height="620" VerticalAlignment="Top">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Name="celebgrid" Tap="celebgrid_Tap" Height="150" Margin="0,0,0,0">
+                                    <Image Source="{Binding LargeImage}" HorizontalAlignment="Left" Height="143" VerticalAlignment="Top" Width="143" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{Binding Title}" Margin="153,54,61,55" Foreground="White" FontWeight="Bold" FontSize="26" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </phone:PanoramaItem>
         </phone:Panorama>
 
-      <ProgressBar Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
+      <ProgressBar x:Name="progressBar" Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
                    Visibility="{Binding ElementName=Container, Path=SelectedItem.Content.ProgressBarVisibility}" />
 
       <!-- AppBar Binding -->

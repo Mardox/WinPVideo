@@ -1,0 +1,53 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AppStudio.Views.draw"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls" 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Viewbox Stretch="Fill">
+        <Grid x:Name="Maingrid" Background="White" Height="800">
+            <Grid HorizontalAlignment="Left" Height="723" Margin="0,77,0,0" VerticalAlignment="Top" Width="480" Background="#FFEEEEEE">
+                <Image x:Name="img" HorizontalAlignment="Left" Height="736" VerticalAlignment="Top" Width="480"/>
+                <Canvas x:Name="painting" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="480" Margin="0,43,0,0" Cursor="Stylus" >
+                    <Canvas.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/images/0/010.png"/>
+                    </Canvas.Background>
+                </Canvas>
+                <Image Name="nextimg" Margin="396,69,0,586" Source="/Assets/arrow.png" Tap="nextimg_Tap"/>
+                <Image Name="backimg" Margin="0,68.185,396,586.815" Source="/Assets/arrow.png" RenderTransformOrigin="0.5,0.5" Tap="backimg_Tap" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-180.024"/>
+                    </Image.RenderTransform>
+                </Image>
+                <controls:ColorPicker x:Name="picker" Height="176" Width="233" Margin="128,69,119,478" ColorChanged="picker_ColorChanged" Visibility="Collapsed" />
+                <Slider Name="penstroke" HorizontalAlignment="Left" Margin="93,69,0,0" VerticalAlignment="Top" Width="298" BorderBrush="White" Style="{StaticResource SliderStyle}" ValueChanged="penstroke_ValueChanged" Minimum="1" Maximum="30" Visibility="Collapsed"/>
+
+
+            </Grid>
+            <Grid x:Name="Topgrid" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="480" Margin="0,72,0,0" Background="White">
+                <Image Source="/Assets/bar.png"/>
+                <Button x:Name="zoom" Content="" HorizontalAlignment="Left" Margin="12,4,0,0" VerticalAlignment="Top" Width="68" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Click="zoom_Click"/>
+                <Button x:Name="resize" Content="" HorizontalAlignment="Left" Margin="80,4,0,0" VerticalAlignment="Top" Width="68" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="resize_Click"/>
+                <Button x:Name="pen" Content="" HorizontalAlignment="Left" Margin="150,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="pen_Click"/>
+                <Button x:Name="circle" Content="" HorizontalAlignment="Left" Margin="202,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="circle_Click"/>
+                <Button x:Name="color" Content="" HorizontalAlignment="Left" Margin="258,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Click="color_Click" Background="{x:Null}" Foreground="{x:Null}"/>
+                <Button x:Name="erase" Content="" HorizontalAlignment="Left" Margin="314,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="erase_Click"/>
+                <Button x:Name="save" Content="" HorizontalAlignment="Left" Margin="364,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="save_Click"/>
+                <Button x:Name="share" Content="" HorizontalAlignment="Left" Margin="422,4,0,0" VerticalAlignment="Top" Width="45" Style="{StaticResource ButtonStyle}" BorderBrush="{x:Null}" Height="73" BorderThickness="0" Background="{x:Null}" Foreground="{x:Null}" Click="share_Click"/>
+            </Grid>
+            <ProgressBar HorizontalAlignment="Left" Height="57" Margin="77,4,0,0" VerticalAlignment="Top" Width="346" Background="#191F1F1F" IsIndeterminate="True" Foreground="Black"/>
+
+        </Grid>
+    </Viewbox>
+
+</phone:PhoneApplicationPage>
