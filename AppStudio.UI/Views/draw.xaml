@@ -18,7 +18,7 @@
         <Grid x:Name="Maingrid" Background="White" Height="800">
             <Grid HorizontalAlignment="Left" Height="723" Margin="0,77,0,0" VerticalAlignment="Top" Width="480" Background="#FFEEEEEE">
                 <Image x:Name="img" HorizontalAlignment="Left" Height="736" VerticalAlignment="Top" Width="480"/>
-                <Canvas x:Name="painting" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="480" Margin="0,43,0,0" Cursor="Stylus" >
+                <Canvas x:Name="painting" HorizontalAlignment="Left" Width="480" Margin="0,74,0,0" Cursor="Stylus" >
                     <Canvas.Background>
                         <ImageBrush Stretch="Uniform" ImageSource="/images/0/010.png"/>
                     </Canvas.Background>
