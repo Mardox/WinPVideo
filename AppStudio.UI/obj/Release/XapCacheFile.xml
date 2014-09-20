@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\AppStudio_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/20/2014 11:12:57 AM">
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Release\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/20/2014 11:12:54 AM" />
+﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\AppStudio_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/20/2014 11:41:31 AM">
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Release\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/20/2014 11:41:27 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\arrow.png" archivePath="Assets\arrow.png" lastWriteTime="9/19/2014 4:22:20 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\bar.png" archivePath="Assets\bar.png" lastWriteTime="9/19/2014 4:22:20 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\feature.search.png" archivePath="Assets\Icons\Dark\feature.search.png" lastWriteTime="9/16/2014 9:56:47 AM" />
@@ -19,112 +19,122 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/16/2014 9:56:47 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\NoImage.png" archivePath="Assets\NoImage.png" lastWriteTime="9/16/2014 9:56:47 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\LockScreenImage.png" archivePath="Assets\LockScreenImage.png" lastWriteTime="9/16/2014 9:56:47 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="9/19/2014 8:09:43 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\SmallIcon.png" archivePath="Assets\Tiles\SmallIcon.png" lastWriteTime="9/19/2014 8:09:43 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets\Tiles\BackgroundImage.png" lastWriteTime="9/19/2014 8:09:43 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="9/20/2014 5:17:46 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\SmallIcon.png" archivePath="Assets\Tiles\SmallIcon.png" lastWriteTime="9/20/2014 5:17:46 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets\Tiles\BackgroundImage.png" lastWriteTime="9/20/2014 5:17:46 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackBackgroundImage.png" archivePath="Assets\Tiles\BackBackgroundImage.png" lastWriteTime="9/16/2014 9:56:47 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="9/19/2014 8:09:43 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="9/20/2014 5:17:46 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\LargeBackBackgroundImage.png" archivePath="Assets\Tiles\LargeBackBackgroundImage.png" lastWriteTime="9/16/2014 9:56:47 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationLogo.png" archivePath="Assets\ApplicationLogo.png" lastWriteTime="9/19/2014 8:09:43 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\00.jpg" archivePath="images\0\00.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\01.jpg" archivePath="images\0\01.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\010.jpg" archivePath="images\0\010.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\011.jpg" archivePath="images\0\011.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\012.jpg" archivePath="images\0\012.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\013.jpg" archivePath="images\0\013.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\014.jpg" archivePath="images\0\014.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\015.jpg" archivePath="images\0\015.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\016.jpg" archivePath="images\0\016.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\017.jpg" archivePath="images\0\017.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\018.jpg" archivePath="images\0\018.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\019.jpg" archivePath="images\0\019.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\02.jpg" archivePath="images\0\02.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\020.jpg" archivePath="images\0\020.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\021.jpg" archivePath="images\0\021.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\022.jpg" archivePath="images\0\022.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\023.jpg" archivePath="images\0\023.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\024.jpg" archivePath="images\0\024.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\025.jpg" archivePath="images\0\025.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\03.jpg" archivePath="images\0\03.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\04.jpg" archivePath="images\0\04.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\05.jpg" archivePath="images\0\05.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\06.jpg" archivePath="images\0\06.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\07.jpg" archivePath="images\0\07.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\08.jpg" archivePath="images\0\08.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\09.jpg" archivePath="images\0\09.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\10.jpg" archivePath="images\1\10.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\11.jpg" archivePath="images\1\11.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\110.jpg" archivePath="images\1\110.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\111.jpg" archivePath="images\1\111.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\112.jpg" archivePath="images\1\112.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\113.jpg" archivePath="images\1\113.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\114.jpg" archivePath="images\1\114.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\115.jpg" archivePath="images\1\115.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\116.jpg" archivePath="images\1\116.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\117.jpg" archivePath="images\1\117.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\118.jpg" archivePath="images\1\118.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\12.jpg" archivePath="images\1\12.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\13.jpg" archivePath="images\1\13.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\14.jpg" archivePath="images\1\14.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\15.jpg" archivePath="images\1\15.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\16.jpg" archivePath="images\1\16.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\17.jpg" archivePath="images\1\17.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\18.jpg" archivePath="images\1\18.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\19.jpg" archivePath="images\1\19.jpg" lastWriteTime="9/20/2014 9:01:08 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\20.jpg" archivePath="images\2\20.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\21.jpg" archivePath="images\2\21.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\210.jpg" archivePath="images\2\210.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\211.jpg" archivePath="images\2\211.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\212.jpg" archivePath="images\2\212.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\213.jpg" archivePath="images\2\213.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\214.jpg" archivePath="images\2\214.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\215.jpg" archivePath="images\2\215.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\216.jpg" archivePath="images\2\216.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\217.jpg" archivePath="images\2\217.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\218.jpg" archivePath="images\2\218.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\219.jpg" archivePath="images\2\219.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\22.jpg" archivePath="images\2\22.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\23.jpg" archivePath="images\2\23.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\24.jpg" archivePath="images\2\24.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\25.jpg" archivePath="images\2\25.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\26.jpg" archivePath="images\2\26.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\27.jpg" archivePath="images\2\27.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\28.jpg" archivePath="images\2\28.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\29.jpg" archivePath="images\2\29.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\30.jpg" archivePath="images\3\30.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\31.jpg" archivePath="images\3\31.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\310.jpg" archivePath="images\3\310.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\311.jpg" archivePath="images\3\311.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\312.jpg" archivePath="images\3\312.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\313.jpg" archivePath="images\3\313.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\314.jpg" archivePath="images\3\314.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\315.jpg" archivePath="images\3\315.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\316.jpg" archivePath="images\3\316.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\317.jpg" archivePath="images\3\317.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\318.jpg" archivePath="images\3\318.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\32.jpg" archivePath="images\3\32.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\33.jpg" archivePath="images\3\33.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\34.jpg" archivePath="images\3\34.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\35.jpg" archivePath="images\3\35.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\36.jpg" archivePath="images\3\36.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\37.jpg" archivePath="images\3\37.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\38.jpg" archivePath="images\3\38.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\39.jpg" archivePath="images\3\39.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\40.jpg" archivePath="images\4\40.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\41.jpg" archivePath="images\4\41.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\410.jpg" archivePath="images\4\410.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\411.jpg" archivePath="images\4\411.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\412.jpg" archivePath="images\4\412.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\413.jpg" archivePath="images\4\413.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\414.jpg" archivePath="images\4\414.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\42.jpg" archivePath="images\4\42.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\43.jpg" archivePath="images\4\43.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\44.jpg" archivePath="images\4\44.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\45.jpg" archivePath="images\4\45.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\46.jpg" archivePath="images\4\46.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\47.jpg" archivePath="images\4\47.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\48.jpg" archivePath="images\4\48.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\49.jpg" archivePath="images\4\49.jpg" lastWriteTime="9/20/2014 9:01:07 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\ApplicationLogo.png" archivePath="Assets\ApplicationLogo.png" lastWriteTime="9/20/2014 5:17:46 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\00.jpg" archivePath="images\0\00.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\01.jpg" archivePath="images\0\01.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\010.jpg" archivePath="images\0\010.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\011.jpg" archivePath="images\0\011.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\012.jpg" archivePath="images\0\012.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\013.jpg" archivePath="images\0\013.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\014.jpg" archivePath="images\0\014.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\015.jpg" archivePath="images\0\015.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\02.jpg" archivePath="images\0\02.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\03.jpg" archivePath="images\0\03.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\04.jpg" archivePath="images\0\04.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\05.jpg" archivePath="images\0\05.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\06.jpg" archivePath="images\0\06.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\07.jpg" archivePath="images\0\07.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\08.jpg" archivePath="images\0\08.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\0\09.jpg" archivePath="images\0\09.jpg" lastWriteTime="9/20/2014 11:33:43 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\10.jpg" archivePath="images\1\10.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\11.jpg" archivePath="images\1\11.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\110.jpg" archivePath="images\1\110.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\111.jpg" archivePath="images\1\111.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\112.jpg" archivePath="images\1\112.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\113.jpg" archivePath="images\1\113.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\114.jpg" archivePath="images\1\114.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\115.jpg" archivePath="images\1\115.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\116.jpg" archivePath="images\1\116.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\117.jpg" archivePath="images\1\117.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\118.jpg" archivePath="images\1\118.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\12.jpg" archivePath="images\1\12.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\13.jpg" archivePath="images\1\13.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\14.jpg" archivePath="images\1\14.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\15.jpg" archivePath="images\1\15.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\16.jpg" archivePath="images\1\16.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\17.jpg" archivePath="images\1\17.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\18.jpg" archivePath="images\1\18.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\1\19.jpg" archivePath="images\1\19.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\20.jpg" archivePath="images\2\20.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\21.jpg" archivePath="images\2\21.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\22.jpg" archivePath="images\2\22.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\23.jpg" archivePath="images\2\23.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\24.jpg" archivePath="images\2\24.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\25.jpg" archivePath="images\2\25.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\26.jpg" archivePath="images\2\26.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\27.jpg" archivePath="images\2\27.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\28.jpg" archivePath="images\2\28.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\2\29.jpg" archivePath="images\2\29.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\30.jpg" archivePath="images\3\30.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\31.jpg" archivePath="images\3\31.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\310.jpg" archivePath="images\3\310.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\311.jpg" archivePath="images\3\311.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\312.jpg" archivePath="images\3\312.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\32.jpg" archivePath="images\3\32.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\33.jpg" archivePath="images\3\33.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\34.jpg" archivePath="images\3\34.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\35.jpg" archivePath="images\3\35.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\36.jpg" archivePath="images\3\36.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\37.jpg" archivePath="images\3\37.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\38.jpg" archivePath="images\3\38.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\3\39.jpg" archivePath="images\3\39.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\40.jpg" archivePath="images\4\40.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\41.jpg" archivePath="images\4\41.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\410.jpg" archivePath="images\4\410.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\411.jpg" archivePath="images\4\411.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\412.jpg" archivePath="images\4\412.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\413.jpg" archivePath="images\4\413.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\414.jpg" archivePath="images\4\414.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\415.jpg" archivePath="images\4\415.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\416.jpg" archivePath="images\4\416.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\417.jpg" archivePath="images\4\417.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\418.jpg" archivePath="images\4\418.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\419.jpg" archivePath="images\4\419.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\42.jpg" archivePath="images\4\42.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\420.jpg" archivePath="images\4\420.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\421.jpg" archivePath="images\4\421.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\422.jpg" archivePath="images\4\422.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\43.jpg" archivePath="images\4\43.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\44.jpg" archivePath="images\4\44.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\45.jpg" archivePath="images\4\45.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\46.jpg" archivePath="images\4\46.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\47.jpg" archivePath="images\4\47.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\48.jpg" archivePath="images\4\48.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\4\49.jpg" archivePath="images\4\49.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\50.jpg" archivePath="images\5\50.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\51.jpg" archivePath="images\5\51.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\510.jpg" archivePath="images\5\510.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\511.jpg" archivePath="images\5\511.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\512.jpg" archivePath="images\5\512.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\513.jpg" archivePath="images\5\513.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\514.jpg" archivePath="images\5\514.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\515.jpg" archivePath="images\5\515.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\52.jpg" archivePath="images\5\52.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\53.jpg" archivePath="images\5\53.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\54.jpg" archivePath="images\5\54.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\55.jpg" archivePath="images\5\55.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\56.jpg" archivePath="images\5\56.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\57.jpg" archivePath="images\5\57.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\58.jpg" archivePath="images\5\58.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\5\59.jpg" archivePath="images\5\59.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\60.jpg" archivePath="images\6\60.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\61.jpg" archivePath="images\6\61.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\610.jpg" archivePath="images\6\610.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\611.jpg" archivePath="images\6\611.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\62.jpg" archivePath="images\6\62.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\63.jpg" archivePath="images\6\63.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\64.jpg" archivePath="images\6\64.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\65.jpg" archivePath="images\6\65.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\66.jpg" archivePath="images\6\66.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\67.jpg" archivePath="images\6\67.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\68.jpg" archivePath="images\6\68.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\images\6\69.jpg" archivePath="images\6\69.jpg" lastWriteTime="9/20/2014 11:33:42 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\ReadMe.Coding4Fun.Toolkit.txt" archivePath="ReadMe.Coding4Fun.Toolkit.txt" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\SplashScreenImage.png" archivePath="SplashScreenImage.png" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="9/16/2014 9:56:52 AM" />
@@ -133,8 +143,8 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Search1Detail.xaml" archivePath="Views\DataTemplates\Search1Detail.xaml" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\Item.xaml" archivePath="Views\DataTemplates\Item.xaml" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Views\DataTemplates\ItemDetail.xaml" archivePath="Views\DataTemplates\ItemDetail.xaml" lastWriteTime="9/16/2014 9:56:52 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="9/20/2014 11:11:56 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Release\AppStudio.Data.dll" archivePath="AppStudio.Data.dll" lastWriteTime="9/20/2014 11:11:51 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="9/20/2014 11:41:18 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Release\AppStudio.Data.dll" archivePath="AppStudio.Data.dll" lastWriteTime="9/20/2014 11:41:11 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.Background.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.Background.dll" archivePath="Cimbalino.Phone.Toolkit.Background.dll" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.dll" archivePath="Cimbalino.Phone.Toolkit.dll" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Coding4Fun.Toolkit.Audio.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Audio.dll" archivePath="Coding4Fun.Toolkit.Audio.dll" lastWriteTime="9/16/2014 9:56:52 AM" />
@@ -149,7 +159,7 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\MyToolkit.Extended.2.0.14.0\lib\wp80\MyToolkit.Extended.dll" archivePath="MyToolkit.Extended.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\NokiaMusic.3.1.5\lib\windowsphone8\Nokia.Music.Wp8.dll" archivePath="Nokia.Music.Wp8.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Release\ScheduledTaskAgent1.dll" archivePath="ScheduledTaskAgent1.dll" lastWriteTime="9/20/2014 11:11:51 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\ScheduledTaskAgent1\Bin\Release\ScheduledTaskAgent1.dll" archivePath="ScheduledTaskAgent1.dll" lastWriteTime="9/20/2014 11:41:12 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll" archivePath="SharpGIS.GZipWebClient.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="9/25/2012 1:41:02 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\Lib\WPAppStudio.Shared2.dll" archivePath="WPAppStudio.Shared2.dll" lastWriteTime="9/16/2014 9:56:52 AM" />
@@ -163,7 +173,7 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.xml" archivePath="Cimbalino.Phone.Toolkit.xml" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.Background.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.Background.xml" archivePath="Cimbalino.Phone.Toolkit.Background.xml" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Release\HtmlAgilityPack-PCL.xml" archivePath="HtmlAgilityPack-PCL.xml" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\icon.png" archivePath="icon.png" lastWriteTime="9/19/2014 8:09:43 PM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/20/2014 11:11:56 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets/Tiles/BackgroundImage.png" lastWriteTime="9/19/2014 8:09:43 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\icon.png" archivePath="icon.png" lastWriteTime="9/20/2014 5:17:46 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/20/2014 11:41:18 AM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets/Tiles/BackgroundImage.png" lastWriteTime="9/20/2014 5:17:46 AM" />
 </xapCache>

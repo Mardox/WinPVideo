@@ -19,8 +19,8 @@
                 <ResourceDictionary Source="Views/DataTemplates/ItemDetail.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <sys:String x:Key="AppName">Draw Cats</sys:String>
-            <sys:String x:Key="AppTitle">Draw Cats</sys:String>
+            <sys:String x:Key="AppName">Draw Puppies</sys:String>
+            <sys:String x:Key="AppTitle">Draw Puppies</sys:String>
 
       <commands:ActionCommands xmlns:commands="clr-namespace:AppStudio" x:Key="ActionCommands"/>
       <local:LocalizedStrings xmlns:local="clr-namespace:AppStudio.Resources" x:Key="LocalizedStrings"/>
