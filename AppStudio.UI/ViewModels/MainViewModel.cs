@@ -17,7 +17,7 @@ namespace AppStudio
        private SearchViewModel _searchModel;
        private Item3ViewModel _item3Model;
        private Item4ViewModel _item4Model;
-       private Item5ViewModel _item5Model;
+       //private Item5ViewModel _item5Model;
 
         private ViewModelBase _selectedItem = null;
         private PrivacyViewModel _privacyModel;
@@ -48,10 +48,10 @@ namespace AppStudio
             get { return _item4Model ?? (_item4Model = new Item4ViewModel()); }
         }
 
-        public Item5ViewModel Item5Model
-        {
-            get { return _item5Model ?? (_item5Model = new Item5ViewModel()); }
-        }
+        //public Item5ViewModel Item5Model
+        //{
+        //    get { return _item5Model ?? (_item5Model = new Item5ViewModel()); }
+        //}
 
         public SearchViewModel SearchModel
         {
@@ -64,7 +64,7 @@ namespace AppStudio
             Item2Model.ViewType = viewType;
             Item3Model.ViewType = viewType;
             Item4Model.ViewType = viewType;
-            Item5Model.ViewType = viewType;
+            //Item5Model.ViewType = viewType;
             SearchModel.ViewType = viewType;
         }
 
@@ -124,7 +124,7 @@ namespace AppStudio
                 Item2Model.LoadItems(isNetworkAvailable),
                 Item3Model.LoadItems(isNetworkAvailable),
                 Item4Model.LoadItems(isNetworkAvailable),
-                Item5Model.LoadItems(isNetworkAvailable),
+                //Item5Model.LoadItems(isNetworkAvailable),
             };
             await Task.WhenAll(loadTasks);
         }

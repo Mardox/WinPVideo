@@ -132,7 +132,7 @@ namespace AppStudio.Views
 
             for (int i = 1; i < listcount; i++)
             {
-                bit.Add(new BitmapImage(new Uri(("/images/" + MainPage.index.ToString() + "/" + MainPage.index.ToString() + i.ToString() + ".png"), UriKind.Relative)));
+                bit.Add(new BitmapImage(new Uri(("/images/" + MainPage.index.ToString() + "/" + MainPage.index.ToString() + i.ToString() + ".jpg"), UriKind.Relative)));
             }
 
             ImageBrush imageBrush = new ImageBrush();

@@ -15,32 +15,25 @@ namespace AppStudio.Resources
                                 };
 
         string[] categoryName = {
-                                    "Basics",
-                                    "Customize",
-                                    "How to",
-                                    "WP & Bootstrap",
-                                    "More"
+                                    "Tutorials",
+                                    "Funny Cats",
+                                    "Cute",
+                                    "Drawing Basics",
                                 };
 
         string[] queryName = {
-                                 "PLC5E59DD6D84D34DC",
-                                 "PLLnpHn493BHGACfv4rC29kJamYMtw34D9",
-                                 "PLCAC66DEEFFEDD36E",
-                                 "PLwn9oKDowiP9Yz_80QdJ5hjwU--V9hSD7",
-                                 "wordpress development" //Playlist ID
+                                 "draw cat turorials",
+                                 "funny cat videos",
+                                 "cute cat videos",
+                                 "PLtG4P3lq8RHFRfdirLJKk822fwOxR6Zn6",
                              };
 
         public string[] drawItemsList = {
-                                            "Kety Perry 1",
-                                            "Kety Perry 2",
-                                            "Kety Perry 3",
-                                            "Kety Perry 4",
-                                            "Kety Perry 5",
-                                            "Kety Perry 6",
-                                            "Kety Perry 7",
-                                            "Kety Perry 8",
-                                            "Kety Perry 9",
-                                            "Kety Perry 10",
+                                            "Cartoon Cats",
+                                            "Cats",
+                                            "Kitten",
+                                            "Lions",
+                                            "Tiger"
                                         };
 
         public string[] returnCategoryName()

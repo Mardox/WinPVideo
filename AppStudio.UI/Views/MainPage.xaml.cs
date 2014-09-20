@@ -77,7 +77,7 @@ namespace AppStudio
             this.AllNames.Clear();
             for (int i = 0; i < listnameofceleb.Count; i++)
             {
-                this.AllNames.Add(new AppStudio.MainViewModels.ItemViewModel() { Title = listnameofceleb[i], LargeImage = "/images/" + i.ToString() + "/" + i.ToString() + "0.png" });
+                this.AllNames.Add(new AppStudio.MainViewModels.ItemViewModel() { Title = listnameofceleb[i], LargeImage = "/images/" + i.ToString() + "/" + i.ToString() + "0.jpg" });
             }
             celebnameslist.ItemsSource = AllNames;
         }
@@ -146,7 +146,7 @@ namespace AppStudio
 
             IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             // SearchInput is a TextBox defined in XAML.
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < finalQuery.Length; i++)
             {
                 if (!settings.Contains("Item" + (i + 1) + "Data"))
                 {
@@ -164,7 +164,7 @@ namespace AppStudio
             Item2.Header = categoryName[1];
             Item3.Header = categoryName[2];
             Item4.Header = categoryName[3];
-            Item5.Header = categoryName[4];
+            //Item5.Header = categoryName[4];
         }
         #endregion
 
@@ -204,11 +204,15 @@ namespace AppStudio
                     MainViewModels.SelectedItem = item.Content as ViewModelBase;
                 }
             }
-            //if (panorama.SelectedItem == drawItem)
-            //{
-            //    progressBar.Visibility = Visibility.Collapsed;
-            //    appBar.IsVisible = false;
-            //}
+            if (panorama.SelectedItem == drawItem)
+            {
+                progressBar.Visibility = Visibility.Collapsed;
+                appBar.Mode = Microsoft.Phone.Shell.ApplicationBarMode.Minimized;
+            }
+            else
+            {
+                appBar.Mode = Microsoft.Phone.Shell.ApplicationBarMode.Default;
+            }
             SpeechServices.Stop();
         }
 
@@ -294,6 +298,7 @@ namespace AppStudio
 
         private void drawItem_Loaded(object sender, RoutedEventArgs e)
         {
+            appBar.Mode = Microsoft.Phone.Shell.ApplicationBarMode.Minimized;
             progressBar.Visibility = Visibility.Collapsed;
         }
     }

@@ -69,7 +69,7 @@
             <phone:PanoramaItem Name="Item2" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item2Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item3" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item3Model}" ContentTemplate="{StaticResource ItemContent}"/>
             <phone:PanoramaItem Name="Item4" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item4Model}" ContentTemplate="{StaticResource ItemContent}"/>
-            <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
+            <!--<phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>-->
 
             
         </phone:Panorama>
