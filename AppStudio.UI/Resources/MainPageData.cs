@@ -16,26 +16,24 @@ namespace AppStudio.Resources
 
         string[] categoryName = {
                                     "Tutorials",
-                                    "Funny Puppies",
-                                    "Cute",
+                                    "Draw Flowers",
+                                    "How to Draw",
                                     "Drawing Basics",
                                 };
 
         string[] queryName = {
-                                 "draw puppies turorials",
-                                 "funny puppies",
-                                 "cute puppies",
+                                 "draw rose tutorials",
+                                 "draw flowers",
+                                 "how to draw a rose",
                                  "PLtG4P3lq8RHFRfdirLJKk822fwOxR6Zn6",
                              };
 
         public string[] drawItemsList = {
-                                            "Boxer",
-                                            "Bulldog",
-                                            "Cartoon Dogs",
-                                            "Chihuahua",
-                                            "Daschund",
-                                            "Poodle",
-                                            "Puppy"
+                                            "Rose 1",
+                                            "Rose 2",
+                                            "Rose 3",
+                                            "Rose 4",
+                                            "Rose 5"
                                         };
 
         public string[] returnCategoryName()
