@@ -76,13 +76,11 @@ namespace ScheduledTaskAgent1
         // Main method that run when the background agent is invoked
         protected override void OnInvoke(ScheduledTask task)
         {
-            int hours = dt.Hour;
-            int minute = dt.Minute;
-
-            // If debugging is enabled, launch the agent again in one minute.
-#if DEBUG_AGENT
-            ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
-#endif
+            Random r2 = new Random();
+            int randomTopic2 = r2.Next(0, topics.Length);
+            _queryString = topics[randomTopic2];
+            _url = baseUrl + _queryString + baseEndUrl;
+            fetchData();
 
             #region Check for the right time to Toast
             if (dt.Hour >= minHour && dt.Hour < maxHour)
@@ -101,6 +99,12 @@ namespace ScheduledTaskAgent1
                 NotifyComplete();
             }
             #endregion
+
+            // If debugging is enabled, launch the agent again in one minute.
+#if DEBUG_AGENT
+            ScheduledActionService.LaunchForTest(task.Name, TimeSpan.FromSeconds(10));
+#endif
+            
         }
 
 
@@ -169,7 +173,7 @@ namespace ScheduledTaskAgent1
             toast.NavigationUri = new System.Uri("/Views/YouTubeViewer.xaml", System.UriKind.Relative);
             toast.Show();
 
-            NotifyComplete();
+            
         }
         #endregion
 

@@ -18,7 +18,6 @@
     <AssemblyPart x:Name="Nokia.Music.Wp8" Source="Nokia.Music.Wp8.dll" />
     <AssemblyPart x:Name="ScheduledTaskAgent1" Source="ScheduledTaskAgent1.dll" />
     <AssemblyPart x:Name="SharpGIS.GZipWebClient" Source="SharpGIS.GZipWebClient.dll" />
-    <AssemblyPart x:Name="System.ServiceModel.Syndication" Source="System.ServiceModel.Syndication.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
     <AssemblyPart x:Name="WPAppStudio.Shared2" Source="WPAppStudio.Shared2.dll" />
     <AssemblyPart x:Name="HtmlAgilityPack-PCL" Source="HtmlAgilityPack-PCL.dll" />
