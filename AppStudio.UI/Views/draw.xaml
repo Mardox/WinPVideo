@@ -24,7 +24,7 @@
                     </Canvas.Background>
                 </Canvas>
                 <Image Name="nextimg" Margin="396,69,0,586" Source="/Assets/arrow.png" Tap="nextimg_Tap"/>
-                <Image Name="backimg" Margin="0,68.185,396,586.815" Source="/Assets/arrow.png" RenderTransformOrigin="0.5,0.5" Tap="backimg_Tap" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image Name="backimg" Margin="0,68.185,396,586.815" Visibility="Collapsed" Source="/Assets/arrow.png" RenderTransformOrigin="0.5,0.5" Tap="backimg_Tap" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <Image.RenderTransform>
                         <CompositeTransform Rotation="-180.024"/>
                     </Image.RenderTransform>
