@@ -9,3 +9,14 @@ C:\Users\HooMan\Desktop\Windows Apps\Test App\AppStudio.Data\Bin\Debug\Newtonsof
 C:\Users\HooMan\Desktop\Windows Apps\Test App\AppStudio.Data\obj\Debug\AppStudio.Data.csprojResolveAssemblyReference.cache
 C:\Users\HooMan\Desktop\Windows Apps\Test App\AppStudio.Data\obj\Debug\AppStudio.Data.dll
 C:\Users\HooMan\Desktop\Windows Apps\Test App\AppStudio.Data\obj\Debug\AppStudio.Data.pdb
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\AppStudio.Data.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\AppStudio.Data.pdb
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\HtmlAgilityPack-PCL.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\SharpGIS.GZipWebClient.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\WPAppStudio.Shared2.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\HtmlAgilityPack-PCL.xml
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.csprojResolveAssemblyReference.cache
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.dll
+C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\obj\Debug\AppStudio.Data.pdb

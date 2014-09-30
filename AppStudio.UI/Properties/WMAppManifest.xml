@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{a3ca2b49-3290-4508-bb61-2e021326f483}" Title="Draw a Rose" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of Drawing Roses videos for you to enjoy." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
+  <App xmlns="" ProductID="{a3ca2b49-3290-4508-bb61-2e021326f483}" Title="Draw a Dragon" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Windows Phone AppStudio" Description="A collection of Drawing Dragons videos for you to enjoy." Publisher="Windows Phone AppStudio" PublisherID="{a9d7af4e-249a-4f2f-acf2-82648fce0e07}">
     <IconPath IsRelative="true" IsResource="false">icon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -29,7 +29,7 @@
           <Count>
           </Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/BackgroundImage.png</BackgroundImageURI>
-          <Title>Draw a Rose</Title>
+          <Title>Draw a Dragon</Title>
           <BackContent>Learn to Draw Roses today</BackContent>
           <BackBackgroundImageURI>Assets/Tiles/BackBackgroundImage.png</BackBackgroundImageURI>
           <BackTitle>Draw a Rose</BackTitle>

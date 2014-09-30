@@ -159,14 +159,6 @@
     <Content Include="images\3\32.jpg" />
     <Content Include="images\3\33.jpg" />
     <Content Include="images\3\34.jpg" />
-    <Content Include="images\4\40.jpg" />
-    <Content Include="images\4\41.jpg" />
-    <Content Include="images\4\42.jpg" />
-    <Content Include="images\4\43.jpg" />
-    <Content Include="images\4\44.jpg" />
-    <Content Include="images\4\45.jpg" />
-    <Content Include="images\4\46.jpg" />
-    <Content Include="images\4\47.jpg" />
     <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
     <Content Include="SplashScreenImage.png" />
   </ItemGroup>
@@ -287,8 +279,6 @@
     <None Include="images\2\Thumbs.db" />
     <None Include="images\3\desktop.ini" />
     <None Include="images\3\Thumbs.db" />
-    <None Include="images\4\desktop.ini" />
-    <None Include="images\4\Thumbs.db" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>

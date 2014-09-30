@@ -29,11 +29,10 @@ namespace AppStudio.Resources
                              };
 
         public string[] drawItemsList = {
-                                            "Rose 1",
-                                            "Rose 2",
-                                            "Rose 3",
-                                            "Rose 4",
-                                            "Rose 5"
+                                            "Dragon 1",
+                                            "Dragon 2",
+                                            "Dragon 3",
+                                            "Dragon 4",
                                         };
 
         public string[] returnCategoryName()
