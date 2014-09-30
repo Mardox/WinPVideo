@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/22/2014 1:56:10 PM">
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/22/2014 1:56:08 PM" />
+﻿<xapCache source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\AppStudio_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/22/2014 4:24:25 PM">
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\obj\Debug\AppStudio.dll" archivePath="AppStudio.dll" lastWriteTime="9/22/2014 4:24:23 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\feature.search.png" archivePath="Assets\Icons\Dark\feature.search.png" lastWriteTime="9/16/2014 9:56:47 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\GoToSource.png" archivePath="Assets\Icons\Dark\GoToSource.png" lastWriteTime="9/16/2014 9:56:47 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Icons\Dark\LockScreen.png" archivePath="Assets\Icons\Dark\LockScreen.png" lastWriteTime="9/16/2014 9:56:47 AM" />
@@ -63,10 +63,6 @@
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\Cimbalino.Phone.Toolkit.Background.3.2.2\lib\wp8\Cimbalino.Phone.Toolkit.Background.xml" archivePath="Cimbalino.Phone.Toolkit.Background.xml" lastWriteTime="9/16/2014 9:56:52 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\HtmlAgilityPack-PCL.xml" archivePath="HtmlAgilityPack-PCL.xml" lastWriteTime="9/16/2014 9:56:53 AM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\icon.png" archivePath="icon.png" lastWriteTime="9/21/2014 9:21:26 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\HtmlAgilityPack-PCL.1.4.6\lib\HtmlAgilityPack-PCL.dll" archivePath="HtmlAgilityPack-PCL.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\packages\HtmlAgilityPack-PCL.1.4.6\lib\HtmlAgilityPack-PCL.xml" archivePath="HtmlAgilityPack-PCL.xml" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.Data\Bin\Debug\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="9/16/2014 9:56:53 AM" />
-  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/22/2014 1:56:10 PM" />
+  <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/22/2014 4:21:52 PM" />
   <file source="C:\Users\Kalyan\Source\Repos\WindowsPhoneVideoApp\AppStudio.UI\Assets\Tiles\BackgroundImage.png" archivePath="Assets/Tiles/BackgroundImage.png" lastWriteTime="9/21/2014 9:21:22 AM" />
 </xapCache>

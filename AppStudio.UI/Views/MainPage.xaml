@@ -38,10 +38,10 @@
 
     <Grid x:Name="LayoutRoot" Background="{StaticResource AppBackgroundColor}">
         <Grid.RowDefinitions>
-            
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        
         
         <phone:Panorama Name="Container" Grid.Row="0" ItemsSource="{Binding}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
                       Background="{StaticResource AppBackground}" TitleTemplate="{StaticResource AppPanoramaTitle}">
@@ -52,7 +52,7 @@
             <phone:PanoramaItem Name="Item5" Header="" Foreground="{StaticResource AppForegroundColor}" Content="{Binding Item5Model}" ContentTemplate="{StaticResource ItemContent}"/>
         </phone:Panorama>
 
-      <ProgressBar Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
+        <ProgressBar Grid.Row="0" IsIndeterminate="True" Foreground="{StaticResource AppForegroundColor}" VerticalAlignment="Center" Height="16"
                    Visibility="{Binding ElementName=Container, Path=SelectedItem.Content.ProgressBarVisibility}" />
 
       <!-- AppBar Binding -->

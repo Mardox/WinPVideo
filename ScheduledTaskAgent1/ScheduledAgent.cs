@@ -76,11 +76,11 @@ namespace ScheduledTaskAgent1
         // Main method that run when the background agent is invoked
         protected override void OnInvoke(ScheduledTask task)
         {
-            Random r2 = new Random();
-            int randomTopic2 = r2.Next(0, topics.Length);
-            _queryString = topics[randomTopic2];
-            _url = baseUrl + _queryString + baseEndUrl;
-            fetchData();
+            //Random r2 = new Random();
+            //int randomTopic2 = r2.Next(0, topics.Length);
+            //_queryString = topics[randomTopic2];
+            //_url = baseUrl + _queryString + baseEndUrl;
+            //fetchData();
 
             #region Check for the right time to Toast
             if (dt.Hour >= minHour && dt.Hour < maxHour)

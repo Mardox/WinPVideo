@@ -29,7 +29,8 @@ namespace AppStudio.Resources
                                  "PLddMio_eGRxe9EYZqCrJywZaBYenVu7kT",
                                  "PLFA2E79F30697AC84"
                              };
-
+        public string admobBanner = "ca-app-pub-3230884902788293/2587157996";
+        public string adMobInterstetial = "ca-app-pub-3230884902788293/9970823995";
         public string[] returnCategoryName()
         {
             return categoryName;

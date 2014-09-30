@@ -15,9 +15,10 @@
       <Capability Name="ID_CAP_MAP" />
       <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
       <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="Views/MainPage.xaml"/>
+      <DefaultTask Name="_default" NavigationPage="Views/MainPage.xaml" />
       <ExtendedTask Name="BackgroundTask">
         <BackgroundServiceAgent Specifier="ScheduledTaskAgent" Name="ScheduledTaskAgent1" Source="ScheduledTaskAgent1" Type="ScheduledTaskAgent1.ScheduledAgent" />
       </ExtendedTask>
