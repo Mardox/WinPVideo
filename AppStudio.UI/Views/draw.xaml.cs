@@ -163,10 +163,13 @@ namespace AppStudio.Views
                 ImageBrush imageBrush = new ImageBrush();
                 imageBrush.ImageSource = bit[imagenumber];
                 painting.Background = imageBrush;
+
+                backimg.Visibility = Visibility.Visible;
             }
-            else
+            else if (imagenumber == listcount - 1)
             {
-                NavigationService.GoBack();
+                //NavigationService.GoBack();
+                nextimg.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -185,6 +188,11 @@ namespace AppStudio.Views
                 ImageBrush imageBrush = new ImageBrush();
                 imageBrush.ImageSource = bit[imagenumber];
                 painting.Background = imageBrush;
+                nextimg.Visibility = Visibility.Visible;
+            }
+            else if (imagenumber == 0)
+            {
+                backimg.Visibility = Visibility.Collapsed;
             }
         }
 
